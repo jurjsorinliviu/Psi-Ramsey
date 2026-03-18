@@ -1,0 +1,1501 @@
+{
+  "suite": "ablations",
+  "smoke": false,
+  "config": {
+    "witness_dir": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\related work\\ramsey_number_bounds\\improved_bounds",
+    "output_path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\psi_ramsey_experiment_results.json",
+    "results_dir": "results\\psi_ramsey_supplementary\\ablation_seed_robustness",
+    "random_seed": 1239,
+    "sampled_subsets": 1500,
+    "teacher_top_k": 16,
+    "normalized_shift_bins": 24,
+    "shared_support_threshold": 0.5,
+    "max_shift_pool": 24,
+    "max_shared_bins": 12,
+    "contrastive_margin": 0.02,
+    "pairwise_support_threshold": 0.5,
+    "pairwise_bonus": 0.35,
+    "max_pair_candidates": 48,
+    "partition_blocks": 4,
+    "partition_support_threshold": 0.5,
+    "partition_contrastive_margin": 0.02,
+    "partition_pair_bonus": 0.35,
+    "target_same_r_only": true,
+    "teacher_trace_runs": 2,
+    "teacher_trace_iterations": 80,
+    "teacher_trace_samples": 300,
+    "teacher_trace_perturbations": 3,
+    "search_iterations": 600,
+    "search_accept_slack": 0.01,
+    "search_explore_prob": 0.08,
+    "search_correction_ratio": 0.035,
+    "search_max_corrections": 8,
+    "transfer_refine_iterations": 180,
+    "transfer_refine_max_initial_corrections": 12,
+    "transfer_refine_correction_ratio": 0.03,
+    "transfer_refine_max_corrections": 6,
+    "transfer_motif_polish_iterations": 60,
+    "transfer_distribution_trials": 3,
+    "transfer_distribution_repair_steps": 12,
+    "transfer_distribution_repair_steps_r3": 24,
+    "transfer_distribution_repair_edge_candidates": 24,
+    "exact_supervision_iterations": 90,
+    "exact_supervision_candidate_edges": 18,
+    "exact_supervision_shift_candidates": 6,
+    "exact_supervision_pair_candidates": 12,
+    "transfer_selection_alignment_weight": 0.08,
+    "transfer_selection_correction_weight": 0.01,
+    "transfer_selection_objective_tolerance": 0.12,
+    "portfolio_alignment_weight": 0.0,
+    "exact_repair_steps": 6,
+    "exact_repair_edge_candidates": 10,
+    "exact_repair_clique_cutoff": 8000,
+    "metadata": {
+      "paper": "PSI-Ramsey",
+      "prototype": "root-level structural transfer scaffold",
+      "inspiration": "PSI-NN only"
+    }
+  },
+  "results": [
+    {
+      "target": "R(3, 13) _= 61.txt",
+      "r": 3,
+      "s": 13,
+      "claimed_bound": 61,
+      "train_pool": [
+        "R(3, 18) _= 100.txt"
+      ],
+      "shared_structure_bins": [
+        21,
+        18,
+        22,
+        8,
+        12,
+        14,
+        17,
+        23,
+        24,
+        19,
+        15,
+        13
+      ],
+      "ranked_structure_bins": [
+        21,
+        18,
+        22,
+        8,
+        12,
+        14,
+        17,
+        23,
+        24,
+        19,
+        15,
+        13,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        16,
+        20
+      ],
+      "top_structure_pairs": [
+        [
+          18,
+          21
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          12,
+          22
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          14,
+          21
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          17,
+          21
+        ],
+        [
+          17,
+          22
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          14,
+          23
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.875,
+          0.75,
+          0.9167,
+          0.3333,
+          0.5,
+          0.5833,
+          0.7083,
+          0.9583,
+          1.0,
+          0.7917,
+          0.625,
+          0.5417
+        ],
+        "ranked": [
+          0.875,
+          0.75,
+          0.9167,
+          0.3333,
+          0.5,
+          0.5833,
+          0.7083,
+          0.9583,
+          1.0,
+          0.7917,
+          0.625,
+          0.5417,
+          0.375,
+          0.0417,
+          0.0833,
+          0.125,
+          0.1667,
+          0.2083,
+          0.25,
+          0.2917,
+          0.4167,
+          0.4583,
+          0.6667,
+          0.8333
+        ]
+      },
+      "target_prioritized_shifts": [
+        26,
+        21,
+        22,
+        29,
+        9
+      ],
+      "baselines": [
+        {
+          "name": "teacher_mean_transfer",
+          "density_error": 0.031073446327683635,
+          "degree_mae": 1.8333333333333333,
+          "motif_overlap": 0.015000000000000001,
+          "edge_disagreement_rate": 0.3327683615819209,
+          "exact_r_clique_count": 108,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0013333333333333333,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.4746763965450964,
+          "repair_final_score": 2.4236413338360383,
+          "repair_exact_count_before": 120,
+          "repair_exact_count_after": 108
+        },
+        {
+          "name": "student_no_filter_transfer",
+          "density_error": 0.031073446327683635,
+          "degree_mae": 1.8333333333333333,
+          "motif_overlap": 0.04222222222222223,
+          "edge_disagreement_rate": 0.2796610169491525,
+          "exact_r_clique_count": 108,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.002,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.4809263965450965,
+          "repair_final_score": 2.4236413338360383,
+          "repair_exact_count_before": 120,
+          "repair_exact_count_after": 108
+        },
+        {
+          "name": "structured_seed",
+          "density_error": 0.0028248587570621486,
+          "degree_mae": 0.36666666666666664,
+          "motif_overlap": 0.01611111111111111,
+          "edge_disagreement_rate": 0.3644067796610169,
+          "exact_r_clique_count": 216,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.004666666666666667,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.790967324317929,
+          "repair_final_score": 2.7300617475793665,
+          "repair_exact_count_before": 240,
+          "repair_exact_count_after": 216
+        },
+        {
+          "name": "psi_ramsey_transfer",
+          "density_error": 0.031073446327683635,
+          "degree_mae": 1.8333333333333333,
+          "motif_overlap": 0.04222222222222223,
+          "edge_disagreement_rate": 0.2796610169491525,
+          "exact_r_clique_count": 108,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.002,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.4684263965450963,
+          "repair_final_score": 2.417391333836038,
+          "repair_exact_count_before": 120,
+          "repair_exact_count_after": 108
+        }
+      ]
+    },
+    {
+      "target": "R(3, 18) _= 100.txt",
+      "r": 3,
+      "s": 18,
+      "claimed_bound": 100,
+      "train_pool": [
+        "R(3, 13) _= 61.txt"
+      ],
+      "shared_structure_bins": [
+        7,
+        3,
+        1,
+        5,
+        18,
+        16,
+        21
+      ],
+      "ranked_structure_bins": [
+        7,
+        3,
+        1,
+        5,
+        18,
+        16,
+        21,
+        10,
+        6,
+        14,
+        2,
+        11,
+        8,
+        22,
+        4,
+        12,
+        13,
+        15,
+        23,
+        24,
+        9,
+        17,
+        19,
+        20
+      ],
+      "top_structure_pairs": [
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          1,
+          21
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          18,
+          21
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.2917,
+          0.125,
+          0.0417,
+          0.2083,
+          0.75,
+          0.6667,
+          0.875
+        ],
+        "ranked": [
+          0.2917,
+          0.125,
+          0.0417,
+          0.2083,
+          0.75,
+          0.6667,
+          0.875,
+          0.4167,
+          0.25,
+          0.5833,
+          0.0833,
+          0.4583,
+          0.3333,
+          0.9167,
+          0.1667,
+          0.5,
+          0.5417,
+          0.625,
+          0.9583,
+          1.0,
+          0.375,
+          0.7083,
+          0.7917,
+          0.8333
+        ]
+      },
+      "target_prioritized_shifts": [
+        47,
+        4,
+        8,
+        18,
+        24,
+        27,
+        31,
+        39,
+        41,
+        45
+      ],
+      "baselines": [
+        {
+          "name": "teacher_mean_transfer",
+          "density_error": 0.03607503607503609,
+          "degree_mae": 3.5555555555555554,
+          "motif_overlap": 0.012574726860441145,
+          "edge_disagreement_rate": 0.34446505875077305,
+          "exact_r_clique_count": 1581,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.009333333333333334,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.8303639069989504,
+          "repair_final_score": 3.762135421276608,
+          "repair_exact_count_before": 1617,
+          "repair_exact_count_after": 1581
+        },
+        {
+          "name": "student_no_filter_transfer",
+          "density_error": 0.03607503607503609,
+          "degree_mae": 3.5353535353535355,
+          "motif_overlap": 0.028447742733457022,
+          "edge_disagreement_rate": 0.3127190270047413,
+          "exact_r_clique_count": 1338,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.006666666666666667,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.740089840658585,
+          "repair_final_score": 3.6966898488496787,
+          "repair_exact_count_before": 1386,
+          "repair_exact_count_after": 1338
+        },
+        {
+          "name": "structured_seed",
+          "density_error": 0.004741290455576169,
+          "degree_mae": 0.46464646464646464,
+          "motif_overlap": 0.012162440733869304,
+          "edge_disagreement_rate": 0.30447330447330445,
+          "exact_r_clique_count": 702,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.0033333333333333335,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.334554189720212,
+          "repair_final_score": 3.3182243387884403,
+          "repair_exact_count_before": 726,
+          "repair_exact_count_after": 702
+        },
+        {
+          "name": "psi_ramsey_transfer",
+          "density_error": 0.03607503607503609,
+          "degree_mae": 3.5353535353535355,
+          "motif_overlap": 0.028447742733457022,
+          "edge_disagreement_rate": 0.3127190270047413,
+          "exact_r_clique_count": 1338,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.006666666666666667,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.7275898406585855,
+          "repair_final_score": 3.677939848849679,
+          "repair_exact_count_before": 1386,
+          "repair_exact_count_after": 1338
+        }
+      ]
+    },
+    {
+      "target": "R(4, 13) _= 139.txt",
+      "r": 4,
+      "s": 13,
+      "claimed_bound": 139,
+      "train_pool": [
+        "R(4, 14) _= 148.txt",
+        "R(4, 15) _= 159.txt"
+      ],
+      "shared_structure_bins": [
+        19,
+        1,
+        5,
+        18,
+        3,
+        2,
+        8,
+        6,
+        10,
+        12,
+        15,
+        14
+      ],
+      "ranked_structure_bins": [
+        19,
+        1,
+        5,
+        18,
+        3,
+        2,
+        8,
+        6,
+        10,
+        12,
+        15,
+        14,
+        23,
+        16,
+        21,
+        9,
+        22,
+        20,
+        24,
+        17,
+        11,
+        4,
+        7,
+        13
+      ],
+      "top_structure_pairs": [
+        [
+          5,
+          18
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.7917,
+          0.0417,
+          0.2083,
+          0.75,
+          0.125,
+          0.0833,
+          0.3333,
+          0.25,
+          0.4167,
+          0.5,
+          0.625,
+          0.5833
+        ],
+        "ranked": [
+          0.7917,
+          0.0417,
+          0.2083,
+          0.75,
+          0.125,
+          0.0833,
+          0.3333,
+          0.25,
+          0.4167,
+          0.5,
+          0.625,
+          0.5833,
+          0.9583,
+          0.6667,
+          0.875,
+          0.375,
+          0.9167,
+          0.8333,
+          1.0,
+          0.7083,
+          0.4583,
+          0.1667,
+          0.2917,
+          0.5417
+        ]
+      },
+      "target_prioritized_shifts": [
+        55,
+        23,
+        52,
+        14,
+        6,
+        9,
+        40,
+        66,
+        3,
+        34,
+        43,
+        46,
+        60,
+        63,
+        17,
+        29,
+        58,
+        49,
+        69,
+        12
+      ],
+      "baselines": [
+        {
+          "name": "teacher_mean_transfer",
+          "density_error": 0.03395747381783559,
+          "degree_mae": 5.043478260869565,
+          "motif_overlap": 0.047574039067422816,
+          "edge_disagreement_rate": 0.5076695229027822,
+          "exact_r_clique_count": 93098,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.006666666666666667,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 1,
+          "repair_initial_score": 5.069198570920247,
+          "repair_final_score": 5.063001464181645,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "student_no_filter_transfer",
+          "density_error": 0.033851687295038624,
+          "degree_mae": 5.028985507246377,
+          "motif_overlap": 0.04778407897500526,
+          "edge_disagreement_rate": 0.5073521633343911,
+          "exact_r_clique_count": 74727,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.005333333333333333,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.056698570920247,
+          "repair_final_score": 5.056698570920247,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "structured_seed",
+          "density_error": 0.0025388765471279218,
+          "degree_mae": 0.9565217391304348,
+          "motif_overlap": 0.06343205208989708,
+          "edge_disagreement_rate": 0.5117951972918651,
+          "exact_r_clique_count": 158334,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.010666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 1,
+          "repair_initial_score": 5.032572331534962,
+          "repair_final_score": 5.032519438273564,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "psi_ramsey_transfer",
+          "density_error": 0.033851687295038624,
+          "degree_mae": 5.028985507246377,
+          "motif_overlap": 0.04778407897500526,
+          "edge_disagreement_rate": 0.5073521633343911,
+          "exact_r_clique_count": 74727,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.005333333333333333,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.056698570920247,
+          "repair_final_score": 5.056698570920247,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        }
+      ]
+    },
+    {
+      "target": "R(4, 14) _= 148.txt",
+      "r": 4,
+      "s": 14,
+      "claimed_bound": 148,
+      "train_pool": [
+        "R(4, 13) _= 139.txt",
+        "R(4, 15) _= 159.txt"
+      ],
+      "shared_structure_bins": [
+        1,
+        2,
+        19,
+        3,
+        6,
+        15,
+        8,
+        22,
+        10,
+        7,
+        12,
+        9
+      ],
+      "ranked_structure_bins": [
+        1,
+        2,
+        19,
+        3,
+        6,
+        15,
+        8,
+        22,
+        10,
+        7,
+        12,
+        9,
+        23,
+        11,
+        14,
+        13,
+        16,
+        21,
+        5,
+        17,
+        18,
+        20,
+        24,
+        4
+      ],
+      "top_structure_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          1,
+          22
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          19
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.0417,
+          0.0833,
+          0.7917,
+          0.125,
+          0.25,
+          0.625,
+          0.3333,
+          0.9167,
+          0.4167,
+          0.2917,
+          0.5,
+          0.375
+        ],
+        "ranked": [
+          0.0417,
+          0.0833,
+          0.7917,
+          0.125,
+          0.25,
+          0.625,
+          0.3333,
+          0.9167,
+          0.4167,
+          0.2917,
+          0.5,
+          0.375,
+          0.9583,
+          0.4583,
+          0.5833,
+          0.5417,
+          0.6667,
+          0.875,
+          0.2083,
+          0.7083,
+          0.75,
+          0.8333,
+          1.0,
+          0.1667
+        ]
+      },
+      "target_prioritized_shifts": [
+        3,
+        58,
+        46,
+        9,
+        67,
+        36,
+        24,
+        70,
+        18,
+        6,
+        61,
+        64,
+        52,
+        49,
+        55,
+        73,
+        43,
+        21,
+        30,
+        40,
+        27,
+        33,
+        12
+      ],
+      "baselines": [
+        {
+          "name": "teacher_mean_transfer",
+          "density_error": 0.026838132513279322,
+          "degree_mae": 3.9183673469387754,
+          "motif_overlap": 0.12282173143229895,
+          "edge_disagreement_rate": 0.356537135402106,
+          "exact_r_clique_count": 101477,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0033333333333333335,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 5.045246249184605,
+          "repair_final_score": 5.02591906625664,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "student_no_filter_transfer",
+          "density_error": 0.026838132513279322,
+          "degree_mae": 3.9183673469387754,
+          "motif_overlap": 0.10912310129531264,
+          "edge_disagreement_rate": 0.3839343956760787,
+          "exact_r_clique_count": 107561,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.002,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 5.076496249184605,
+          "repair_final_score": 5.05716906625664,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "structured_seed",
+          "density_error": 0.0,
+          "degree_mae": 0.0,
+          "motif_overlap": 0.1095890410958904,
+          "edge_disagreement_rate": 0.3561643835616438,
+          "exact_r_clique_count": 110838,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.5,
+          "top_shift_recall": 0.5,
+          "top_shift_jaccard": 0.3333333333333333,
+          "sampled_r_clique_rate": 0.0026666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.0125,
+          "repair_final_score": 5.0125,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "psi_ramsey_transfer",
+          "density_error": 0.026838132513279322,
+          "degree_mae": 3.9183673469387754,
+          "motif_overlap": 0.10912310129531264,
+          "edge_disagreement_rate": 0.3839343956760787,
+          "exact_r_clique_count": 107561,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.002,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 5.051496249184605,
+          "repair_final_score": 5.02591906625664,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        }
+      ]
+    },
+    {
+      "target": "R(4, 15) _= 159.txt",
+      "r": 4,
+      "s": 15,
+      "claimed_bound": 159,
+      "train_pool": [
+        "R(4, 13) _= 139.txt",
+        "R(4, 14) _= 148.txt"
+      ],
+      "shared_structure_bins": [
+        18,
+        3,
+        1,
+        5,
+        19,
+        9,
+        2,
+        7,
+        23,
+        21,
+        6,
+        11
+      ],
+      "ranked_structure_bins": [
+        18,
+        3,
+        1,
+        5,
+        19,
+        9,
+        2,
+        7,
+        23,
+        21,
+        6,
+        11,
+        14,
+        16,
+        22,
+        13,
+        10,
+        8,
+        12,
+        17,
+        15,
+        20,
+        4,
+        24
+      ],
+      "top_structure_pairs": [
+        [
+          5,
+          18
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          9,
+          23
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          1,
+          21
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.75,
+          0.125,
+          0.0417,
+          0.2083,
+          0.7917,
+          0.375,
+          0.0833,
+          0.2917,
+          0.9583,
+          0.875,
+          0.25,
+          0.4583
+        ],
+        "ranked": [
+          0.75,
+          0.125,
+          0.0417,
+          0.2083,
+          0.7917,
+          0.375,
+          0.0833,
+          0.2917,
+          0.9583,
+          0.875,
+          0.25,
+          0.4583,
+          0.5833,
+          0.6667,
+          0.9167,
+          0.5417,
+          0.4167,
+          0.3333,
+          0.5,
+          0.7083,
+          0.625,
+          0.8333,
+          0.1667,
+          1.0
+        ]
+      },
+      "target_prioritized_shifts": [
+        59,
+        10,
+        63,
+        76,
+        69,
+        72,
+        53,
+        43,
+        56,
+        3,
+        20,
+        7,
+        16,
+        46,
+        30,
+        66,
+        49,
+        26,
+        36,
+        79,
+        23,
+        13,
+        40,
+        33
+      ],
+      "baselines": [
+        {
+          "name": "teacher_mean_transfer",
+          "density_error": 0.0023381439974199947,
+          "degree_mae": 2.2658227848101267,
+          "motif_overlap": 0.09165197884954335,
+          "edge_disagreement_rate": 0.4165927598161735,
+          "exact_r_clique_count": 298067,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.012,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.0782524053320435,
+          "repair_final_score": 5.0782524053320435,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "student_no_filter_transfer",
+          "density_error": 0.0023381439974199947,
+          "degree_mae": 2.2658227848101267,
+          "motif_overlap": 0.09165197884954335,
+          "edge_disagreement_rate": 0.4165927598161735,
+          "exact_r_clique_count": 298067,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.012,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.0470024053320435,
+          "repair_final_score": 5.0470024053320435,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "structured_seed",
+          "density_error": 0.0023381439974199947,
+          "degree_mae": 2.2658227848101267,
+          "motif_overlap": 0.09165197884954335,
+          "edge_disagreement_rate": 0.4165927598161735,
+          "exact_r_clique_count": 298067,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.012,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.028252405332044,
+          "repair_final_score": 5.028252405332044,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "psi_ramsey_transfer",
+          "density_error": 0.0023381439974199947,
+          "degree_mae": 2.2658227848101267,
+          "motif_overlap": 0.09165197884954335,
+          "edge_disagreement_rate": 0.4165927598161735,
+          "exact_r_clique_count": 298067,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.012,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.034502405332044,
+          "repair_final_score": 5.034502405332044,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        }
+      ]
+    }
+  ]
+}

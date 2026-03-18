@@ -1,0 +1,106 @@
+{
+  "targets": 5,
+  "metric_preferences": {
+    "density_error": "min",
+    "degree_mae": "min",
+    "edge_disagreement_rate": "min",
+    "exact_r_clique_count": "min",
+    "motif_overlap": "max",
+    "top_shift_jaccard": "max",
+    "validity_proxy": "max"
+  },
+  "mean_ranks": {
+    "density_error": {
+      "psi_ramsey_transfer": 2.9,
+      "structured_seed": 1.3,
+      "student_no_filter_transfer": 2.9,
+      "teacher_mean_transfer": 2.9
+    },
+    "degree_mae": {
+      "psi_ramsey_transfer": 2.8,
+      "structured_seed": 1.3,
+      "student_no_filter_transfer": 2.8,
+      "teacher_mean_transfer": 3.1
+    },
+    "edge_disagreement_rate": {
+      "psi_ramsey_transfer": 2.5,
+      "structured_seed": 2.9,
+      "student_no_filter_transfer": 2.5,
+      "teacher_mean_transfer": 2.1
+    },
+    "exact_r_clique_count": {
+      "psi_ramsey_transfer": 2.4,
+      "structured_seed": 2.9,
+      "student_no_filter_transfer": 2.4,
+      "teacher_mean_transfer": 2.3
+    },
+    "motif_overlap": {
+      "psi_ramsey_transfer": 2.7,
+      "structured_seed": 2.5,
+      "student_no_filter_transfer": 2.7,
+      "teacher_mean_transfer": 2.1
+    },
+    "top_shift_jaccard": {
+      "psi_ramsey_transfer": 2.6,
+      "structured_seed": 2.2,
+      "student_no_filter_transfer": 2.6,
+      "teacher_mean_transfer": 2.6
+    },
+    "validity_proxy": {
+      "psi_ramsey_transfer": 2.5,
+      "structured_seed": 2.5,
+      "student_no_filter_transfer": 2.5,
+      "teacher_mean_transfer": 2.5
+    }
+  },
+  "winner_counts": {
+    "density_error": {
+      "psi_ramsey_transfer": 1,
+      "structured_seed": 5,
+      "student_no_filter_transfer": 1,
+      "teacher_mean_transfer": 1
+    },
+    "degree_mae": {
+      "psi_ramsey_transfer": 1,
+      "structured_seed": 5,
+      "student_no_filter_transfer": 1,
+      "teacher_mean_transfer": 1
+    },
+    "edge_disagreement_rate": {
+      "psi_ramsey_transfer": 2,
+      "structured_seed": 2,
+      "student_no_filter_transfer": 2,
+      "teacher_mean_transfer": 3
+    },
+    "exact_r_clique_count": {
+      "psi_ramsey_transfer": 3,
+      "structured_seed": 2,
+      "student_no_filter_transfer": 3,
+      "teacher_mean_transfer": 2
+    },
+    "motif_overlap": {
+      "psi_ramsey_transfer": 2,
+      "structured_seed": 3,
+      "student_no_filter_transfer": 2,
+      "teacher_mean_transfer": 2
+    },
+    "top_shift_jaccard": {
+      "psi_ramsey_transfer": 3,
+      "structured_seed": 4,
+      "student_no_filter_transfer": 3,
+      "teacher_mean_transfer": 3
+    },
+    "validity_proxy": {
+      "psi_ramsey_transfer": 5,
+      "structured_seed": 5,
+      "student_no_filter_transfer": 5,
+      "teacher_mean_transfer": 5
+    }
+  },
+  "overall_mean_rank": {
+    "psi_ramsey_transfer": 2.6285714285714286,
+    "structured_seed": 2.2285714285714286,
+    "student_no_filter_transfer": 2.6285714285714286,
+    "teacher_mean_transfer": 2.514285714285714
+  }
+}

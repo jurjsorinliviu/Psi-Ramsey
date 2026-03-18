@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "transfer_compute_low_budget",
+      "suite": "transfer",
+      "mode": "single",
+      "replicates": 1,
+      "results_dir": "results\\psi_ramsey_supplementary\\transfer_compute_low_budget",
+      "description": "Low-budget transfer stress test with reduced search and sampling budgets.",
+      "reviewer_goal": "Check whether the method degrades gracefully under tighter budgets.",
+      "config": {
+        "sampled_subsets": 900,
+        "search_iterations": 320,
+        "transfer_refine_iterations": 90,
+        "random_seed": 1234,
+        "results_dir": "results\\psi_ramsey_supplementary\\transfer_compute_low_budget"
+      },
+      "report_file": "results\\psi_ramsey_supplementary\\transfer_compute_low_budget\\transfer\\report.json",
+      "targets": 5
+    }
+  ]
+}

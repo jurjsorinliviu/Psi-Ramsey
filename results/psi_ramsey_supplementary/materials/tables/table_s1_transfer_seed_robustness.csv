@@ -1,0 +1,12 @@
+Method,Overall Mean Rank Mean,Overall Mean Rank Std,Exact r-Clique Count Mean,Exact r-Clique Count Std,Motif Overlap Mean,Motif Overlap Std,Top-Shift Jaccard Mean,Top-Shift Jaccard Std,Validity Proxy Mean,Validity Proxy Std
+portfolio_transfer,4.3911,0.2574,2854.525,672.7256,0.0693,0.0063,0.1476,0.0239,0.6875,0.0331
+structure_oracle_transfer,4.5196,0.041,8361.2,0.0,0.1926,0.0,0.84,0.0,0.6,0.0
+random_circulant,5.0607,0.288,8558.4,1510.2719,0.0663,0.0064,0.151,0.0267,0.5,0.0
+exact_triangle_transfer,5.2089,0.2395,6842.375,105.4592,0.0776,0.0021,0.0416,0.0238,0.6125,0.0331
+structured_seed,5.6964,0.1004,113552.2,137.4393,0.0586,0.0,0.1346,0.0068,0.5,0.0
+random_density,5.5964,0.2643,8652.95,626.8664,0.1026,0.0016,0.1137,0.0337,0.5,0.0
+nearest_neighbor_transfer,6.8661,0.0677,92643.45,25.5477,0.0591,0.0,0.1033,0.0,0.5,0.0
+teacher_mean_transfer,6.8857,0.0666,98931.8,0.0,0.0579,0.0,0.1166,0.0,0.5,0.0
+psi_ramsey_transfer,6.7518,0.2079,98271.275,1067.1369,0.0604,0.0029,0.1136,0.0073,0.525,0.0433
+partition_transfer,7.4875,0.0716,122485.575,90.7098,0.0612,0.0,0.239,0.0,0.6,0.0001
+scaled_nearest_transfer,7.5357,0.0655,147216.85,0.0866,0.1013,0.0,0.1547,0.0,0.4993,0.0013

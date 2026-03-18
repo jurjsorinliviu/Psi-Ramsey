@@ -1,0 +1,6 @@
+Method,Overall Mean Rank Mean,Overall Mean Rank Std,Search Best Score Mean,Search Best Score Std,Exact r-Clique Count Mean,Exact r-Clique Count Std,Validity Proxy Mean,Validity Proxy Std
+portfolio_guided_search,2.8719,0.2172,2.5198,0.0637,2617.125,656.3601,0.7,0.0
+structured_seed_local_search,2.4406,0.1722,2.202,0.3326,1904.35,441.5061,0.725,0.0433
+random_local_search,2.5719,0.1347,2.3229,0.1557,1802.725,333.441,0.7125,0.0331
+psi_ramsey_guided_search,3.3141,0.2168,3.4309,0.3046,26566.5,9892.785,0.6,0.0707
+partition_guided_search,3.8016,0.0878,3.8918,0.0052,158781.35,98.5505,0.6,0.0001

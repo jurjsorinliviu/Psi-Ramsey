@@ -1,0 +1,37 @@
+{
+  "tables": [
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s1_transfer_seed_robustness.csv",
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s2_search_seed_robustness.csv",
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s3_ablation_seed_robustness.csv",
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s4_interpretability_seed_robustness.csv",
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s5_transfer_sensitivity.csv",
+    "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\tables\\table_s6_search_budget_sensitivity.csv"
+  ],
+  "figures": [
+    {
+      "figure": "S1",
+      "title": "Transfer Seed Robustness",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\figures\\figure_s1_transfer_seed_robustness.png",
+      "caption": "Distribution of overall mean ranks across eight replicated transfer runs. Lower values are better. The figure shows that portfolio_transfer remains the most stable balanced method across seed variation."
+    },
+    {
+      "figure": "S2",
+      "title": "Search Seed Robustness",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\figures\\figure_s2_search_seed_robustness.png",
+      "caption": "Distribution of overall mean ranks across eight replicated search runs. Lower values are better. Portfolio-guided search remains competitive and stable under seed variation."
+    },
+    {
+      "figure": "S3",
+      "title": "Transfer Sensitivity Across Supplementary Scenarios",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\figures\\figure_s3_transfer_sensitivity.png",
+      "caption": "Comparison of mean exact r-clique counts for three representative transfer methods across the main setting and six supplementary transfer stress tests. Lower values are better."
+    },
+    {
+      "figure": "S4",
+      "title": "Portfolio Transfer Sensitivity Across Supplementary Scenarios",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\figures\\figure_s4_portfolio_transfer_sensitivity.png",
+      "caption": "Sensitivity of the portfolio transfer method across supplementary transfer scenarios. Bars show mean exact r-clique counts and the line shows overall mean rank. Lower values are better on both axes."
+    }
+  ],
+  "summary": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey_supplementary\\materials\\supplementary_summary.json"
+}

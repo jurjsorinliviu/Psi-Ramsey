@@ -1,0 +1,130 @@
+{
+  "experiments": [
+    {
+      "name": "transfer_seed_robustness",
+      "suite": "transfer",
+      "description": "Repeated transfer runs across incremented seeds to show that the balanced-transfer story is not a single-seed artifact.",
+      "reviewer_goal": "Stability and repeatability of the main transfer claim.",
+      "config_overrides": {},
+      "replicates": 8,
+      "smoke_supported": true
+    },
+    {
+      "name": "search_seed_robustness",
+      "suite": "search",
+      "description": "Repeated search-suite runs to test whether the search ranking remains competitive under seed variation.",
+      "reviewer_goal": "Stability of the search-side conclusions.",
+      "config_overrides": {},
+      "replicates": 8,
+      "smoke_supported": true
+    },
+    {
+      "name": "transfer_compute_low_budget",
+      "suite": "transfer",
+      "description": "Low-budget transfer stress test with reduced search and sampling budgets.",
+      "reviewer_goal": "Check whether the method degrades gracefully under tighter budgets.",
+      "config_overrides": {
+        "sampled_subsets": 900,
+        "search_iterations": 320,
+        "transfer_refine_iterations": 90
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "transfer_compute_high_budget",
+      "suite": "transfer",
+      "description": "High-budget transfer stress test to examine whether the ranking remains favorable when more refinement is allowed.",
+      "reviewer_goal": "Budget-sensitivity analysis for the transfer claim.",
+      "config_overrides": {
+        "sampled_subsets": 2200,
+        "search_iterations": 900,
+        "transfer_refine_iterations": 260
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "search_compute_high_budget",
+      "suite": "search",
+      "description": "Higher-budget search suite to test whether the main search ordering changes under more aggressive refinement.",
+      "reviewer_goal": "Budget-sensitivity analysis for the search claim.",
+      "config_overrides": {
+        "sampled_subsets": 2200,
+        "search_iterations": 950,
+        "transfer_refine_iterations": 240
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "mixed_r_transfer_neighborhood",
+      "suite": "transfer",
+      "description": "Transfer-neighborhood stress test using mixed-r teacher pools rather than same-r-only pools.",
+      "reviewer_goal": "Directly test how local the transferable structure really is.",
+      "config_overrides": {
+        "target_same_r_only": false
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "high_resolution_structure",
+      "suite": "transfer",
+      "description": "Higher-resolution structural distillation with more bins and a larger extracted motif pool.",
+      "reviewer_goal": "Sensitivity to structural resolution choices.",
+      "config_overrides": {
+        "normalized_shift_bins": 32,
+        "teacher_top_k": 20,
+        "max_shift_pool": 32
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "compact_structure",
+      "suite": "transfer",
+      "description": "Compact structural distillation with fewer bins and a smaller motif pool.",
+      "reviewer_goal": "Check whether conclusions persist under a more compressed representation.",
+      "config_overrides": {
+        "normalized_shift_bins": 16,
+        "teacher_top_k": 10,
+        "max_shift_pool": 16,
+        "max_shared_bins": 8
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "exact_supervision_stress",
+      "suite": "transfer",
+      "description": "Stronger exact-supervision setting for weak R(3,s) cells.",
+      "reviewer_goal": "Show how much the weak-cell behavior depends on exact supervision strength.",
+      "config_overrides": {
+        "exact_supervision_iterations": 150,
+        "transfer_distribution_repair_steps_r3": 36,
+        "exact_repair_steps": 10
+      },
+      "replicates": 1,
+      "smoke_supported": true
+    },
+    {
+      "name": "ablation_seed_robustness",
+      "suite": "ablations",
+      "description": "Replicated ablation runs to verify that the component ordering is not seed-fragile.",
+      "reviewer_goal": "Strengthen confidence in the ablation narrative.",
+      "config_overrides": {},
+      "replicates": 6,
+      "smoke_supported": true
+    },
+    {
+      "name": "interpretability_seed_robustness",
+      "suite": "interpretability",
+      "description": "Replicated interpretability/frontier runs to test the stability of the structure-validity separation.",
+      "reviewer_goal": "Stability of the structure-validity frontier.",
+      "config_overrides": {},
+      "replicates": 6,
+      "smoke_supported": true
+    }
+  ]
+}

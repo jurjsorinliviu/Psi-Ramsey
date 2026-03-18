@@ -1,0 +1,136 @@
+{
+  "targets": 5,
+  "metric_preferences": {
+    "density_error": "min",
+    "degree_mae": "min",
+    "edge_disagreement_rate": "min",
+    "exact_r_clique_count": "min",
+    "motif_overlap": "max",
+    "top_shift_jaccard": "max",
+    "validity_proxy": "max",
+    "search_best_score": "min"
+  },
+  "mean_ranks": {
+    "density_error": {
+      "partition_guided_search": 5.0,
+      "portfolio_guided_search": 3.6,
+      "psi_ramsey_guided_search": 2.0,
+      "random_local_search": 2.1,
+      "structured_seed_local_search": 2.3
+    },
+    "degree_mae": {
+      "partition_guided_search": 5.0,
+      "portfolio_guided_search": 3.0,
+      "psi_ramsey_guided_search": 2.6,
+      "random_local_search": 1.9,
+      "structured_seed_local_search": 2.5
+    },
+    "edge_disagreement_rate": {
+      "partition_guided_search": 2.0,
+      "portfolio_guided_search": 3.0,
+      "psi_ramsey_guided_search": 3.0,
+      "random_local_search": 4.2,
+      "structured_seed_local_search": 2.8
+    },
+    "exact_r_clique_count": {
+      "partition_guided_search": 4.5,
+      "portfolio_guided_search": 2.6,
+      "psi_ramsey_guided_search": 3.7,
+      "random_local_search": 2.0,
+      "structured_seed_local_search": 2.2
+    },
+    "motif_overlap": {
+      "partition_guided_search": 2.0,
+      "portfolio_guided_search": 3.0,
+      "psi_ramsey_guided_search": 3.0,
+      "random_local_search": 4.4,
+      "structured_seed_local_search": 2.6
+    },
+    "top_shift_jaccard": {
+      "partition_guided_search": 2.5,
+      "portfolio_guided_search": 2.5,
+      "psi_ramsey_guided_search": 3.9,
+      "random_local_search": 3.9,
+      "structured_seed_local_search": 2.2
+    },
+    "validity_proxy": {
+      "partition_guided_search": 3.7,
+      "portfolio_guided_search": 2.8,
+      "psi_ramsey_guided_search": 3.4,
+      "random_local_search": 2.8,
+      "structured_seed_local_search": 2.3
+    },
+    "search_best_score": {
+      "partition_guided_search": 4.8,
+      "portfolio_guided_search": 2.6,
+      "psi_ramsey_guided_search": 4.0,
+      "random_local_search": 1.6,
+      "structured_seed_local_search": 2.0
+    }
+  },
+  "winner_counts": {
+    "density_error": {
+      "partition_guided_search": 0,
+      "portfolio_guided_search": 0,
+      "psi_ramsey_guided_search": 3,
+      "random_local_search": 2,
+      "structured_seed_local_search": 0
+    },
+    "degree_mae": {
+      "partition_guided_search": 0,
+      "portfolio_guided_search": 1,
+      "psi_ramsey_guided_search": 2,
+      "random_local_search": 2,
+      "structured_seed_local_search": 0
+    },
+    "edge_disagreement_rate": {
+      "partition_guided_search": 3,
+      "portfolio_guided_search": 1,
+      "psi_ramsey_guided_search": 0,
+      "random_local_search": 0,
+      "structured_seed_local_search": 1
+    },
+    "exact_r_clique_count": {
+      "partition_guided_search": 1,
+      "portfolio_guided_search": 2,
+      "psi_ramsey_guided_search": 1,
+      "random_local_search": 4,
+      "structured_seed_local_search": 3
+    },
+    "motif_overlap": {
+      "partition_guided_search": 2,
+      "portfolio_guided_search": 1,
+      "psi_ramsey_guided_search": 0,
+      "random_local_search": 0,
+      "structured_seed_local_search": 2
+    },
+    "top_shift_jaccard": {
+      "partition_guided_search": 2,
+      "portfolio_guided_search": 2,
+      "psi_ramsey_guided_search": 1,
+      "random_local_search": 0,
+      "structured_seed_local_search": 2
+    },
+    "validity_proxy": {
+      "partition_guided_search": 2,
+      "portfolio_guided_search": 4,
+      "psi_ramsey_guided_search": 3,
+      "random_local_search": 4,
+      "structured_seed_local_search": 5
+    },
+    "search_best_score": {
+      "partition_guided_search": 0,
+      "portfolio_guided_search": 1,
+      "psi_ramsey_guided_search": 0,
+      "random_local_search": 4,
+      "structured_seed_local_search": 2
+    }
+  },
+  "overall_mean_rank": {
+    "partition_guided_search": 3.6875,
+    "portfolio_guided_search": 2.8875,
+    "psi_ramsey_guided_search": 3.1999999999999997,
+    "random_local_search": 2.8625000000000003,
+    "structured_seed_local_search": 2.3625000000000003
+  }
+}

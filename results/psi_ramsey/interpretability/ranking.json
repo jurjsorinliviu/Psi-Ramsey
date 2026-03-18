@@ -1,0 +1,196 @@
+{
+  "targets": 5,
+  "metric_preferences": {
+    "density_error": "min",
+    "degree_mae": "min",
+    "edge_disagreement_rate": "min",
+    "exact_r_clique_count": "min",
+    "motif_overlap": "max",
+    "top_shift_jaccard": "max",
+    "validity_proxy": "max"
+  },
+  "mean_ranks": {
+    "density_error": {
+      "exact_triangle_transfer": 3.6,
+      "nearest_neighbor_transfer": 6.0,
+      "partition_transfer": 9.4,
+      "portfolio_transfer": 4.0,
+      "psi_ramsey_transfer": 5.6,
+      "random_circulant": 2.1,
+      "scaled_nearest_transfer": 7.3,
+      "structure_oracle_transfer": 8.8,
+      "structured_seed": 2.1,
+      "teacher_mean_transfer": 6.1
+    },
+    "degree_mae": {
+      "exact_triangle_transfer": 5.4,
+      "nearest_neighbor_transfer": 5.8,
+      "partition_transfer": 9.4,
+      "portfolio_transfer": 3.1,
+      "psi_ramsey_transfer": 5.5,
+      "random_circulant": 2.6,
+      "scaled_nearest_transfer": 7.3,
+      "structure_oracle_transfer": 8.8,
+      "structured_seed": 1.8,
+      "teacher_mean_transfer": 5.3
+    },
+    "edge_disagreement_rate": {
+      "exact_triangle_transfer": 4.4,
+      "nearest_neighbor_transfer": 6.0,
+      "partition_transfer": 4.0,
+      "portfolio_transfer": 4.4,
+      "psi_ramsey_transfer": 6.8,
+      "random_circulant": 5.8,
+      "scaled_nearest_transfer": 9.0,
+      "structure_oracle_transfer": 1.0,
+      "structured_seed": 6.6,
+      "teacher_mean_transfer": 7.0
+    },
+    "exact_r_clique_count": {
+      "exact_triangle_transfer": 2.6,
+      "nearest_neighbor_transfer": 6.3,
+      "partition_transfer": 7.0,
+      "portfolio_transfer": 1.6,
+      "psi_ramsey_transfer": 6.7,
+      "random_circulant": 4.4,
+      "scaled_nearest_transfer": 9.6,
+      "structure_oracle_transfer": 3.0,
+      "structured_seed": 7.6,
+      "teacher_mean_transfer": 6.2
+    },
+    "motif_overlap": {
+      "exact_triangle_transfer": 3.8,
+      "nearest_neighbor_transfer": 6.6,
+      "partition_transfer": 7.2,
+      "portfolio_transfer": 5.2,
+      "psi_ramsey_transfer": 7.2,
+      "random_circulant": 6.2,
+      "scaled_nearest_transfer": 3.8,
+      "structure_oracle_transfer": 1.2,
+      "structured_seed": 7.0,
+      "teacher_mean_transfer": 6.8
+    },
+    "top_shift_jaccard": {
+      "exact_triangle_transfer": 7.6,
+      "nearest_neighbor_transfer": 6.3,
+      "partition_transfer": 5.3,
+      "portfolio_transfer": 4.9,
+      "psi_ramsey_transfer": 7.1,
+      "random_circulant": 6.5,
+      "scaled_nearest_transfer": 4.9,
+      "structure_oracle_transfer": 1.0,
+      "structured_seed": 5.0,
+      "teacher_mean_transfer": 6.4
+    },
+    "validity_proxy": {
+      "exact_triangle_transfer": 5.0,
+      "nearest_neighbor_transfer": 5.9,
+      "partition_transfer": 5.0,
+      "portfolio_transfer": 4.0,
+      "psi_ramsey_transfer": 5.9,
+      "random_circulant": 5.9,
+      "scaled_nearest_transfer": 6.6,
+      "structure_oracle_transfer": 4.9,
+      "structured_seed": 5.9,
+      "teacher_mean_transfer": 5.9
+    }
+  },
+  "winner_counts": {
+    "density_error": {
+      "exact_triangle_transfer": 1,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 1,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 2,
+      "scaled_nearest_transfer": 0,
+      "structure_oracle_transfer": 0,
+      "structured_seed": 2,
+      "teacher_mean_transfer": 0
+    },
+    "degree_mae": {
+      "exact_triangle_transfer": 0,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 1,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "scaled_nearest_transfer": 0,
+      "structure_oracle_transfer": 0,
+      "structured_seed": 3,
+      "teacher_mean_transfer": 1
+    },
+    "edge_disagreement_rate": {
+      "exact_triangle_transfer": 0,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "scaled_nearest_transfer": 0,
+      "structure_oracle_transfer": 5,
+      "structured_seed": 0,
+      "teacher_mean_transfer": 0
+    },
+    "exact_r_clique_count": {
+      "exact_triangle_transfer": 1,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 1,
+      "portfolio_transfer": 3,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "scaled_nearest_transfer": 0,
+      "structure_oracle_transfer": 2,
+      "structured_seed": 0,
+      "teacher_mean_transfer": 0
+    },
+    "motif_overlap": {
+      "exact_triangle_transfer": 0,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "scaled_nearest_transfer": 1,
+      "structure_oracle_transfer": 4,
+      "structured_seed": 0,
+      "teacher_mean_transfer": 0
+    },
+    "top_shift_jaccard": {
+      "exact_triangle_transfer": 0,
+      "nearest_neighbor_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "scaled_nearest_transfer": 0,
+      "structure_oracle_transfer": 5,
+      "structured_seed": 0,
+      "teacher_mean_transfer": 0
+    },
+    "validity_proxy": {
+      "exact_triangle_transfer": 3,
+      "nearest_neighbor_transfer": 2,
+      "partition_transfer": 3,
+      "portfolio_transfer": 4,
+      "psi_ramsey_transfer": 2,
+      "random_circulant": 2,
+      "scaled_nearest_transfer": 2,
+      "structure_oracle_transfer": 3,
+      "structured_seed": 2,
+      "teacher_mean_transfer": 2
+    }
+  },
+  "overall_mean_rank": {
+    "exact_triangle_transfer": 4.628571428571428,
+    "nearest_neighbor_transfer": 6.128571428571428,
+    "partition_transfer": 6.757142857142857,
+    "portfolio_transfer": 3.885714285714286,
+    "psi_ramsey_transfer": 6.3999999999999995,
+    "random_circulant": 4.785714285714286,
+    "scaled_nearest_transfer": 6.928571428571429,
+    "structure_oracle_transfer": 4.1000000000000005,
+    "structured_seed": 5.142857142857143,
+    "teacher_mean_transfer": 6.242857142857142
+  }
+}

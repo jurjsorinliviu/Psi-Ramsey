@@ -1,0 +1,8 @@
+Scenario,Portfolio Overall Mean Rank,Portfolio Exact r-Clique Count,Portfolio Validity Proxy,Exact Triangle Exact r-Clique Count,Exact Triangle Validity Proxy,Structure Oracle Exact r-Clique Count,Structure Oracle Structural Score
+Main transfer suite,4.2143,3142.4,0.7,6843.8,0.6,8361.2,0.5163
+Low-budget transfer,4.3714,4000.6,0.7,6692.6,0.6,8361.2,0.5163
+High-budget transfer,4.4857,3588.0,0.7,6692.6,0.6,8361.2,0.5163
+Mixed-r teacher pool,4.4857,3055.8,0.6,7650.8,0.6,8351.4,0.5163
+High-resolution structure,4.7857,3137.6,0.6,6692.6,0.6,8361.2,0.5163
+Compact structure,4.5143,1154.6,0.7,6692.6,0.6,8361.2,0.5163
+Stronger exact supervision,4.8286,2888.2,0.7,6690.8,0.7,8305.6,0.516

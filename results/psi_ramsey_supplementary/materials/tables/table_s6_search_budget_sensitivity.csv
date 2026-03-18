@@ -1,0 +1,3 @@
+Scenario,Portfolio Guided Search Overall Mean Rank,Portfolio Guided Search Search Best Score,Portfolio Guided Search Exact r-Clique Count,Structured Seed Local Search Overall Mean Rank,Structured Seed Local Search Search Best Score,Structured Seed Local Search Exact r-Clique Count,Random Local Search Overall Mean Rank,Random Local Search Search Best Score,Random Local Search Exact r-Clique Count
+Main search suite,2.8375,2.4918,2193.0,2.575,2.1326,1157.4,2.4375,2.4392,2107.8
+High-budget search,2.8875,2.5255,2320.0,2.3625,1.6985,1687.8,2.8625,2.3778,1546.2

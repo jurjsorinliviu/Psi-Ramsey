@@ -1,0 +1,1811 @@
+{
+  "suite": "search",
+  "smoke": false,
+  "config": {
+    "witness_dir": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\related work\\ramsey_number_bounds\\improved_bounds",
+    "output_path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\psi_ramsey_experiment_results.json",
+    "results_dir": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey",
+    "random_seed": 1236,
+    "sampled_subsets": 1500,
+    "teacher_top_k": 16,
+    "normalized_shift_bins": 24,
+    "shared_support_threshold": 0.5,
+    "max_shift_pool": 24,
+    "max_shared_bins": 12,
+    "contrastive_margin": 0.02,
+    "pairwise_support_threshold": 0.5,
+    "pairwise_bonus": 0.35,
+    "max_pair_candidates": 48,
+    "partition_blocks": 4,
+    "partition_support_threshold": 0.5,
+    "partition_contrastive_margin": 0.02,
+    "partition_pair_bonus": 0.35,
+    "target_same_r_only": true,
+    "teacher_trace_runs": 2,
+    "teacher_trace_iterations": 80,
+    "teacher_trace_samples": 300,
+    "teacher_trace_perturbations": 3,
+    "search_iterations": 600,
+    "search_accept_slack": 0.01,
+    "search_explore_prob": 0.08,
+    "search_correction_ratio": 0.035,
+    "search_max_corrections": 8,
+    "transfer_refine_iterations": 180,
+    "transfer_refine_max_initial_corrections": 12,
+    "transfer_refine_correction_ratio": 0.03,
+    "transfer_refine_max_corrections": 6,
+    "transfer_motif_polish_iterations": 60,
+    "transfer_distribution_trials": 3,
+    "transfer_distribution_repair_steps": 12,
+    "transfer_distribution_repair_steps_r3": 24,
+    "transfer_distribution_repair_edge_candidates": 24,
+    "exact_supervision_iterations": 90,
+    "exact_supervision_candidate_edges": 18,
+    "exact_supervision_shift_candidates": 6,
+    "exact_supervision_pair_candidates": 12,
+    "transfer_selection_alignment_weight": 0.08,
+    "transfer_selection_correction_weight": 0.01,
+    "transfer_selection_objective_tolerance": 0.12,
+    "portfolio_alignment_weight": 0.0,
+    "exact_repair_steps": 6,
+    "exact_repair_edge_candidates": 10,
+    "exact_repair_clique_cutoff": 8000,
+    "metadata": {
+      "paper": "PSI-Ramsey",
+      "prototype": "root-level structural transfer scaffold",
+      "inspiration": "PSI-NN only"
+    }
+  },
+  "results": [
+    {
+      "target": "R(3, 13) _= 61.txt",
+      "r": 3,
+      "s": 13,
+      "claimed_bound": 61,
+      "train_pool": [
+        "R(3, 18) _= 100.txt"
+      ],
+      "shared_structure_bins": [
+        21,
+        18,
+        22,
+        8,
+        12,
+        14,
+        17,
+        23,
+        24,
+        19,
+        15,
+        13
+      ],
+      "ranked_structure_bins": [
+        21,
+        18,
+        22,
+        8,
+        12,
+        14,
+        17,
+        23,
+        24,
+        19,
+        15,
+        13,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        16,
+        20
+      ],
+      "top_structure_pairs": [
+        [
+          18,
+          21
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          12,
+          22
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          14,
+          21
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          17,
+          21
+        ],
+        [
+          17,
+          22
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          14,
+          23
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.875,
+          0.75,
+          0.9167,
+          0.3333,
+          0.5,
+          0.5833,
+          0.7083,
+          0.9583,
+          1.0,
+          0.7917,
+          0.625,
+          0.5417
+        ],
+        "ranked": [
+          0.875,
+          0.75,
+          0.9167,
+          0.3333,
+          0.5,
+          0.5833,
+          0.7083,
+          0.9583,
+          1.0,
+          0.7917,
+          0.625,
+          0.5417,
+          0.375,
+          0.0417,
+          0.0833,
+          0.125,
+          0.1667,
+          0.2083,
+          0.25,
+          0.2917,
+          0.4167,
+          0.4583,
+          0.6667,
+          0.8333
+        ]
+      },
+      "target_prioritized_shifts": [
+        29,
+        24,
+        19,
+        30,
+        1
+      ],
+      "baselines": [
+        {
+          "name": "random_local_search",
+          "density_error": 0.0050847457627118675,
+          "degree_mae": 0.36666666666666664,
+          "motif_overlap": 0.012222222222222221,
+          "edge_disagreement_rate": 0.3757062146892655,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 2.4376919332682605,
+          "search_best_score": 0.0025423728813559338,
+          "search_accepted_moves": 208,
+          "search_iterations": 600,
+          "search_shift_count": 6,
+          "search_correction_count": 2,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0025423728813559338,
+          "repair_final_score": 0.0025423728813559338,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "structured_seed_local_search",
+          "density_error": 0.0050847457627118675,
+          "degree_mae": 0.36666666666666664,
+          "motif_overlap": 0.03611111111111112,
+          "edge_disagreement_rate": 0.32598870056497176,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 2.7922173243179294,
+          "search_best_score": 0.0025423728813559338,
+          "search_accepted_moves": 226,
+          "search_iterations": 600,
+          "search_shift_count": 6,
+          "search_correction_count": 2,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0025423728813559338,
+          "repair_final_score": 0.0025423728813559338,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "psi_ramsey_guided_search",
+          "density_error": 0.0050847457627118675,
+          "degree_mae": 0.3333333333333333,
+          "motif_overlap": 0.08722222222222221,
+          "edge_disagreement_rate": 0.2231638418079096,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 2.5185676394829497,
+          "search_best_score": 0.0025423728813559338,
+          "search_accepted_moves": 195,
+          "search_iterations": 600,
+          "search_shift_count": 6,
+          "search_correction_count": 2,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0025423728813559338,
+          "repair_final_score": 0.0025423728813559338,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "partition_guided_search",
+          "density_error": 0.05593220338983049,
+          "degree_mae": 3.3,
+          "motif_overlap": 0.05055555555555557,
+          "edge_disagreement_rate": 0.39152542372881355,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0006666666666666666,
+          "validity_proxy": 0.9993333333333333,
+          "search_initial_score": 0.061864406779661006,
+          "search_best_score": 0.061299435028248576,
+          "search_accepted_moves": 225,
+          "search_iterations": 600,
+          "search_shift_count": 2,
+          "search_correction_count": 2,
+          "partition_blocks": 4,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.061299435028248576,
+          "repair_final_score": 0.061299435028248576,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "portfolio_guided_search",
+          "density_error": 0.0050847457627118675,
+          "degree_mae": 0.43333333333333335,
+          "motif_overlap": 0.060000000000000005,
+          "edge_disagreement_rate": 0.27853107344632766,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 0.0025423728813559338,
+          "search_best_score": 0.0025423728813559338,
+          "search_accepted_moves": 61,
+          "search_iterations": 600,
+          "search_shift_count": 6,
+          "search_correction_count": 2,
+          "portfolio_refine_iterations": 200,
+          "portfolio_seed_component": "psi_ramsey_guided_search",
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0025423728813559338,
+          "repair_final_score": 0.0025423728813559338,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0,
+          "portfolio_component": "portfolio_refined",
+          "portfolio_objective": 0.0025423728813559338,
+          "portfolio_alignment": 0.06686682774303582,
+          "portfolio_structure_alignment": 0.13373365548607163,
+          "portfolio_profile_alignment": 0.0,
+          "portfolio_correction_penalty": 0.0,
+          "portfolio_selection_score": 0.0025423728813559338,
+          "portfolio_exact_r_clique_count": 0,
+          "search_portfolio_size": 4
+        }
+      ]
+    },
+    {
+      "target": "R(3, 18) _= 100.txt",
+      "r": 3,
+      "s": 18,
+      "claimed_bound": 100,
+      "train_pool": [
+        "R(3, 13) _= 61.txt"
+      ],
+      "shared_structure_bins": [
+        7,
+        3,
+        1,
+        5,
+        18,
+        16,
+        21
+      ],
+      "ranked_structure_bins": [
+        7,
+        3,
+        1,
+        5,
+        18,
+        16,
+        21,
+        10,
+        6,
+        14,
+        2,
+        11,
+        8,
+        22,
+        4,
+        12,
+        13,
+        15,
+        23,
+        24,
+        9,
+        17,
+        19,
+        20
+      ],
+      "top_structure_pairs": [
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          1,
+          21
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          18,
+          21
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.2917,
+          0.125,
+          0.0417,
+          0.2083,
+          0.75,
+          0.6667,
+          0.875
+        ],
+        "ranked": [
+          0.2917,
+          0.125,
+          0.0417,
+          0.2083,
+          0.75,
+          0.6667,
+          0.875,
+          0.4167,
+          0.25,
+          0.5833,
+          0.0833,
+          0.4583,
+          0.3333,
+          0.9167,
+          0.1667,
+          0.5,
+          0.5417,
+          0.625,
+          0.9583,
+          1.0,
+          0.375,
+          0.7083,
+          0.7917,
+          0.8333
+        ]
+      },
+      "target_prioritized_shifts": [
+        14,
+        6,
+        10,
+        37,
+        45,
+        49,
+        2,
+        8,
+        12,
+        16
+      ],
+      "baselines": [
+        {
+          "name": "random_local_search",
+          "density_error": 0.003710575139146549,
+          "degree_mae": 0.3838383838383838,
+          "motif_overlap": 0.017316017316017316,
+          "edge_disagreement_rate": 0.29519686662543804,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 3.341637523053545,
+          "search_best_score": 0.0018552875695732746,
+          "search_accepted_moves": 240,
+          "search_iterations": 600,
+          "search_shift_count": 8,
+          "search_correction_count": 3,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0018552875695732746,
+          "repair_final_score": 0.0018552875695732746,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "structured_seed_local_search",
+          "density_error": 0.003092145949288805,
+          "degree_mae": 0.3838383838383838,
+          "motif_overlap": 0.044733044733044736,
+          "edge_disagreement_rate": 0.24180581323438466,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 3.341637523053545,
+          "search_best_score": 0.0015460729746444024,
+          "search_accepted_moves": 217,
+          "search_iterations": 600,
+          "search_shift_count": 8,
+          "search_correction_count": 2,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.0015460729746444024,
+          "repair_final_score": 0.0015460729746444024,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0
+        },
+        {
+          "name": "psi_ramsey_guided_search",
+          "density_error": 0.0053597196454339135,
+          "degree_mae": 0.5252525252525253,
+          "motif_overlap": 0.0014430014430014432,
+          "edge_disagreement_rate": 0.32529375386518244,
+          "exact_r_clique_count": 181,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.0013333333333333333,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 3.941305143227376,
+          "search_best_score": 2.661645509444774,
+          "search_accepted_moves": 287,
+          "search_iterations": 600,
+          "search_shift_count": 8,
+          "search_correction_count": 3,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.661645509444774,
+          "repair_final_score": 2.6300272395481326,
+          "repair_exact_count_before": 193,
+          "repair_exact_count_after": 181
+        },
+        {
+          "name": "partition_guided_search",
+          "density_error": 0.10678210678210678,
+          "degree_mae": 13.636363636363637,
+          "motif_overlap": 0.007627293341579057,
+          "edge_disagreement_rate": 0.2230467944753659,
+          "exact_r_clique_count": 2093,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.013333333333333334,
+          "sampled_s_independent_rate": 0.024666666666666667,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.556297661466984,
+          "search_best_score": 4.104650943474,
+          "search_accepted_moves": 233,
+          "search_iterations": 600,
+          "search_shift_count": 1,
+          "search_correction_count": 3,
+          "partition_blocks": 4,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.066900943474,
+          "repair_final_score": 4.0352975873976265,
+          "repair_exact_count_before": 2231,
+          "repair_exact_count_after": 2093
+        },
+        {
+          "name": "portfolio_guided_search",
+          "density_error": 0.02391259534116677,
+          "degree_mae": 2.3434343434343434,
+          "motif_overlap": 0.04411461554318698,
+          "edge_disagreement_rate": 0.22139764996907854,
+          "exact_r_clique_count": 0,
+          "exact_r_clique_free": 1.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 1.0,
+          "search_initial_score": 0.036956297670583386,
+          "search_best_score": 0.036956297670583386,
+          "search_accepted_moves": 89,
+          "search_iterations": 600,
+          "search_shift_count": 7,
+          "search_correction_count": 2,
+          "portfolio_refine_iterations": 200,
+          "portfolio_seed_component": "structured_seed_local_search",
+          "repair_steps_applied": 0,
+          "repair_initial_score": 0.036956297670583386,
+          "repair_final_score": 0.036956297670583386,
+          "repair_exact_count_before": 0,
+          "repair_exact_count_after": 0,
+          "portfolio_component": "portfolio_refined",
+          "portfolio_objective": 0.036956297670583386,
+          "portfolio_alignment": 0.18129395358324243,
+          "portfolio_structure_alignment": 0.36258790716648487,
+          "portfolio_profile_alignment": 0.0,
+          "portfolio_correction_penalty": 0.0,
+          "portfolio_selection_score": 0.036956297670583386,
+          "portfolio_exact_r_clique_count": 0,
+          "search_portfolio_size": 4
+        }
+      ]
+    },
+    {
+      "target": "R(4, 13) _= 139.txt",
+      "r": 4,
+      "s": 13,
+      "claimed_bound": 139,
+      "train_pool": [
+        "R(4, 14) _= 148.txt",
+        "R(4, 15) _= 159.txt"
+      ],
+      "shared_structure_bins": [
+        19,
+        1,
+        5,
+        18,
+        3,
+        2,
+        8,
+        6,
+        10,
+        12,
+        15,
+        14
+      ],
+      "ranked_structure_bins": [
+        19,
+        1,
+        5,
+        18,
+        3,
+        2,
+        8,
+        6,
+        10,
+        12,
+        15,
+        14,
+        23,
+        16,
+        21,
+        9,
+        22,
+        20,
+        24,
+        17,
+        11,
+        4,
+        7,
+        13
+      ],
+      "top_structure_pairs": [
+        [
+          5,
+          18
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.7917,
+          0.0417,
+          0.2083,
+          0.75,
+          0.125,
+          0.0833,
+          0.3333,
+          0.25,
+          0.4167,
+          0.5,
+          0.625,
+          0.5833
+        ],
+        "ranked": [
+          0.7917,
+          0.0417,
+          0.2083,
+          0.75,
+          0.125,
+          0.0833,
+          0.3333,
+          0.25,
+          0.4167,
+          0.5,
+          0.625,
+          0.5833,
+          0.9583,
+          0.6667,
+          0.875,
+          0.375,
+          0.9167,
+          0.8333,
+          1.0,
+          0.7083,
+          0.4583,
+          0.1667,
+          0.2917,
+          0.5417
+        ]
+      },
+      "target_prioritized_shifts": [
+        52,
+        55,
+        46,
+        43,
+        60,
+        66,
+        9,
+        17,
+        3,
+        29,
+        6,
+        14,
+        23,
+        40,
+        63,
+        58,
+        69,
+        34,
+        49,
+        37
+      ],
+      "baselines": [
+        {
+          "name": "random_local_search",
+          "density_error": 0.012482809690045504,
+          "degree_mae": 2.5217391304347827,
+          "motif_overlap": 0.12885948330182734,
+          "edge_disagreement_rate": 0.365809795832011,
+          "exact_r_clique_count": 4549,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.620969139970621,
+          "search_best_score": 4.2880241584717975,
+          "search_accepted_moves": 269,
+          "search_iterations": 600,
+          "search_shift_count": 21,
+          "search_correction_count": 5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.2880241584717975,
+          "repair_final_score": 4.267793855242006,
+          "repair_exact_count_before": 4738,
+          "repair_exact_count_after": 4549
+        },
+        {
+          "name": "structured_seed_local_search",
+          "density_error": 0.019464720194647178,
+          "degree_mae": 3.347826086956522,
+          "motif_overlap": 0.10438983406847298,
+          "edge_disagreement_rate": 0.40854755104199725,
+          "exact_r_clique_count": 2731,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.0313223315349624,
+          "search_best_score": 4.0477582453385486,
+          "search_accepted_moves": 301,
+          "search_iterations": 600,
+          "search_shift_count": 21,
+          "search_correction_count": 4,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.054008245338548,
+          "repair_final_score": 4.029094868304671,
+          "repair_exact_count_before": 2871,
+          "repair_exact_count_after": 2731
+        },
+        {
+          "name": "psi_ramsey_guided_search",
+          "density_error": 0.008780281392150646,
+          "degree_mae": 1.2753623188405796,
+          "motif_overlap": 0.07414408737660155,
+          "edge_disagreement_rate": 0.4973024436686766,
+          "exact_r_clique_count": 69891,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.0026666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.0591985709202465,
+          "search_best_score": 5.009707500264466,
+          "search_accepted_moves": 492,
+          "search_iterations": 600,
+          "search_shift_count": 23,
+          "search_correction_count": 5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 5.004707500264466,
+          "repair_final_score": 5.004390140696075,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "partition_guided_search",
+          "density_error": 0.07457949857188195,
+          "degree_mae": 10.231884057971014,
+          "motif_overlap": 0.1224532661205629,
+          "edge_disagreement_rate": 0.365915582354808,
+          "exact_r_clique_count": 194375,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.625,
+          "top_shift_recall": 0.625,
+          "top_shift_jaccard": 0.45454545454545453,
+          "sampled_r_clique_rate": 0.010666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.305110546916324,
+          "search_best_score": 5.121024734812422,
+          "search_accepted_moves": 262,
+          "search_iterations": 600,
+          "search_shift_count": 4,
+          "search_correction_count": 5,
+          "partition_blocks": 4,
+          "repair_steps_applied": 1,
+          "repair_initial_score": 5.120191401479088,
+          "repair_final_score": 5.123085203831396,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "portfolio_guided_search",
+          "density_error": 0.012588596212842473,
+          "degree_mae": 2.5217391304347827,
+          "motif_overlap": 0.0656374711195127,
+          "edge_disagreement_rate": 0.4928594097112028,
+          "exact_r_clique_count": 3454,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0006666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.541122019865976,
+          "search_best_score": 4.151519471850809,
+          "search_accepted_moves": 86,
+          "search_iterations": 600,
+          "search_shift_count": 21,
+          "search_correction_count": 4,
+          "portfolio_refine_iterations": 200,
+          "portfolio_seed_component": "random_local_search",
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.149852805184142,
+          "repair_final_score": 4.128853598673083,
+          "repair_exact_count_before": 3603,
+          "repair_exact_count_after": 3454,
+          "portfolio_component": "portfolio_refined",
+          "portfolio_objective": 4.128853598673083,
+          "portfolio_alignment": 0.2969797604020732,
+          "portfolio_structure_alignment": 0.5939595208041464,
+          "portfolio_profile_alignment": 0.0,
+          "portfolio_correction_penalty": 0.0,
+          "portfolio_selection_score": 4.128853598673083,
+          "portfolio_exact_r_clique_count": 3454,
+          "search_portfolio_size": 4
+        }
+      ]
+    },
+    {
+      "target": "R(4, 14) _= 148.txt",
+      "r": 4,
+      "s": 14,
+      "claimed_bound": 148,
+      "train_pool": [
+        "R(4, 13) _= 139.txt",
+        "R(4, 15) _= 159.txt"
+      ],
+      "shared_structure_bins": [
+        1,
+        2,
+        19,
+        3,
+        6,
+        15,
+        8,
+        22,
+        10,
+        7,
+        12,
+        9
+      ],
+      "ranked_structure_bins": [
+        1,
+        2,
+        19,
+        3,
+        6,
+        15,
+        8,
+        22,
+        10,
+        7,
+        12,
+        9,
+        23,
+        11,
+        14,
+        13,
+        16,
+        21,
+        5,
+        17,
+        18,
+        20,
+        24,
+        4
+      ],
+      "top_structure_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          1,
+          22
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          19
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.0417,
+          0.0833,
+          0.7917,
+          0.125,
+          0.25,
+          0.625,
+          0.3333,
+          0.9167,
+          0.4167,
+          0.2917,
+          0.5,
+          0.375
+        ],
+        "ranked": [
+          0.0417,
+          0.0833,
+          0.7917,
+          0.125,
+          0.25,
+          0.625,
+          0.3333,
+          0.9167,
+          0.4167,
+          0.2917,
+          0.5,
+          0.375,
+          0.9583,
+          0.4583,
+          0.5833,
+          0.5417,
+          0.6667,
+          0.875,
+          0.2083,
+          0.7083,
+          0.75,
+          0.8333,
+          1.0,
+          0.1667
+        ]
+      },
+      "target_prioritized_shifts": [
+        3,
+        70,
+        64,
+        55,
+        58,
+        46,
+        67,
+        9,
+        18,
+        49,
+        33,
+        61,
+        52,
+        6,
+        30,
+        73,
+        36,
+        21,
+        24,
+        40,
+        43,
+        27,
+        15
+      ],
+      "baselines": [
+        {
+          "name": "random_local_search",
+          "density_error": 0.014071381977448505,
+          "degree_mae": 2.054421768707483,
+          "motif_overlap": 0.10930947721554375,
+          "edge_disagreement_rate": 0.34265212934488865,
+          "exact_r_clique_count": 1153,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.35611906592842,
+          "search_best_score": 3.601703798985872,
+          "search_accepted_moves": 252,
+          "search_iterations": 600,
+          "search_shift_count": 20,
+          "search_correction_count": 4,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.601703798985872,
+          "repair_final_score": 3.5763932521159365,
+          "repair_exact_count_before": 1213,
+          "repair_exact_count_after": 1153
+        },
+        {
+          "name": "structured_seed_local_search",
+          "density_error": 0.014071381977448505,
+          "degree_mae": 2.054421768707483,
+          "motif_overlap": 0.0684931506849315,
+          "edge_disagreement_rate": 0.4242847824061131,
+          "exact_r_clique_count": 136,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.008333333333334,
+          "search_best_score": 2.5426228116059875,
+          "search_accepted_moves": 244,
+          "search_iterations": 600,
+          "search_shift_count": 20,
+          "search_correction_count": 4,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 2.5426228116059875,
+          "repair_final_score": 2.500510765577999,
+          "repair_exact_count_before": 148,
+          "repair_exact_count_after": 136
+        },
+        {
+          "name": "psi_ramsey_guided_search",
+          "density_error": 0.014164569937564042,
+          "degree_mae": 2.068027210884354,
+          "motif_overlap": 0.06877271456527817,
+          "edge_disagreement_rate": 0.42363246668530424,
+          "exact_r_clique_count": 6077,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.0006666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.039412915851272,
+          "search_best_score": 4.435482549262098,
+          "search_accepted_moves": 326,
+          "search_iterations": 600,
+          "search_shift_count": 20,
+          "search_correction_count": 5,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.435482549262098,
+          "repair_final_score": 4.4152519967062185,
+          "repair_exact_count_before": 6329,
+          "repair_exact_count_after": 6077
+        },
+        {
+          "name": "partition_guided_search",
+          "density_error": 0.043332401453732156,
+          "degree_mae": 6.326530612244898,
+          "motif_overlap": 0.08629205106700213,
+          "edge_disagreement_rate": 0.3594259621656882,
+          "exact_r_clique_count": 253508,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.012666666666666666,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.114312272854347,
+          "search_best_score": 5.07852436865157,
+          "search_accepted_moves": 237,
+          "search_iterations": 600,
+          "search_shift_count": 4,
+          "search_correction_count": 5,
+          "partition_blocks": 4,
+          "repair_steps_applied": 1,
+          "repair_initial_score": 5.093941035318237,
+          "repair_final_score": 5.097261438822104,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "portfolio_guided_search",
+          "density_error": 0.013978194017332968,
+          "degree_mae": 2.0408163265306123,
+          "motif_overlap": 0.08172584102134003,
+          "edge_disagreement_rate": 0.3979125896934116,
+          "exact_r_clique_count": 2155,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.25,
+          "top_shift_recall": 0.25,
+          "top_shift_jaccard": 0.14285714285714285,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.063758724522311,
+          "search_best_score": 3.9054794872617027,
+          "search_accepted_moves": 87,
+          "search_iterations": 600,
+          "search_shift_count": 20,
+          "search_correction_count": 5,
+          "portfolio_refine_iterations": 200,
+          "portfolio_seed_component": "random_local_search",
+          "repair_steps_applied": 6,
+          "repair_initial_score": 3.9054794872617027,
+          "repair_final_score": 3.8919008132668758,
+          "repair_exact_count_before": 2215,
+          "repair_exact_count_after": 2155,
+          "portfolio_component": "portfolio_refined",
+          "portfolio_objective": 3.8919008132668758,
+          "portfolio_alignment": 0.31494442395726274,
+          "portfolio_structure_alignment": 0.6298888479145255,
+          "portfolio_profile_alignment": 0.0,
+          "portfolio_correction_penalty": 0.0,
+          "portfolio_selection_score": 3.8919008132668758,
+          "portfolio_exact_r_clique_count": 2155,
+          "search_portfolio_size": 4
+        }
+      ]
+    },
+    {
+      "target": "R(4, 15) _= 159.txt",
+      "r": 4,
+      "s": 15,
+      "claimed_bound": 159,
+      "train_pool": [
+        "R(4, 13) _= 139.txt",
+        "R(4, 14) _= 148.txt"
+      ],
+      "shared_structure_bins": [
+        18,
+        3,
+        1,
+        5,
+        19,
+        9,
+        2,
+        7,
+        23,
+        21,
+        6,
+        11
+      ],
+      "ranked_structure_bins": [
+        18,
+        3,
+        1,
+        5,
+        19,
+        9,
+        2,
+        7,
+        23,
+        21,
+        6,
+        11,
+        14,
+        16,
+        22,
+        13,
+        10,
+        8,
+        12,
+        17,
+        15,
+        20,
+        4,
+        24
+      ],
+      "top_structure_pairs": [
+        [
+          5,
+          18
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          9,
+          23
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          1,
+          21
+        ]
+      ],
+      "structure_ratios": {
+        "shared": [
+          0.75,
+          0.125,
+          0.0417,
+          0.2083,
+          0.7917,
+          0.375,
+          0.0833,
+          0.2917,
+          0.9583,
+          0.875,
+          0.25,
+          0.4583
+        ],
+        "ranked": [
+          0.75,
+          0.125,
+          0.0417,
+          0.2083,
+          0.7917,
+          0.375,
+          0.0833,
+          0.2917,
+          0.9583,
+          0.875,
+          0.25,
+          0.4583,
+          0.5833,
+          0.6667,
+          0.9167,
+          0.5417,
+          0.4167,
+          0.3333,
+          0.5,
+          0.7083,
+          0.625,
+          0.8333,
+          0.1667,
+          1.0
+        ]
+      },
+      "target_prioritized_shifts": [
+        59,
+        69,
+        63,
+        53,
+        76,
+        72,
+        30,
+        36,
+        10,
+        56,
+        16,
+        43,
+        3,
+        66,
+        7,
+        20,
+        49,
+        79,
+        46,
+        23,
+        13,
+        26,
+        33,
+        40
+      ],
+      "baselines": [
+        {
+          "name": "random_local_search",
+          "density_error": 0.002821897927920647,
+          "degree_mae": 2.278481012658228,
+          "motif_overlap": 0.10086524595417402,
+          "edge_disagreement_rate": 0.3985326130774813,
+          "exact_r_clique_count": 4837,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.760220912856239,
+          "search_best_score": 4.301749873372592,
+          "search_accepted_moves": 250,
+          "search_iterations": 600,
+          "search_shift_count": 24,
+          "search_correction_count": 6,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.301749873372592,
+          "repair_final_score": 4.29319181164408,
+          "repair_exact_count_before": 5004,
+          "repair_exact_count_after": 4837
+        },
+        {
+          "name": "structured_seed_local_search",
+          "density_error": 0.01572200274127228,
+          "degree_mae": 3.4430379746835444,
+          "motif_overlap": 0.07298509854190034,
+          "edge_disagreement_rate": 0.4409417076513747,
+          "exact_r_clique_count": 2920,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.375,
+          "top_shift_recall": 0.375,
+          "top_shift_jaccard": 0.23076923076923078,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.042835738665377,
+          "search_best_score": 4.068476842722823,
+          "search_accepted_moves": 276,
+          "search_iterations": 600,
+          "search_shift_count": 23,
+          "search_correction_count": 6,
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.068476842722823,
+          "repair_final_score": 4.0532301700798286,
+          "repair_exact_count_before": 3011,
+          "repair_exact_count_after": 2920
+        },
+        {
+          "name": "psi_ramsey_guided_search",
+          "density_error": 0.0024993953075868602,
+          "degree_mae": 2.2911392405063293,
+          "motif_overlap": 0.06657586925172249,
+          "edge_disagreement_rate": 0.46722567120857855,
+          "exact_r_clique_count": 62498,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.125,
+          "top_shift_recall": 0.125,
+          "top_shift_jaccard": 0.06666666666666667,
+          "sampled_r_clique_rate": 0.005333333333333333,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.029502405332043,
+          "search_best_score": 5.001249697653793,
+          "search_accepted_moves": 492,
+          "search_iterations": 600,
+          "search_shift_count": 24,
+          "search_correction_count": 6,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.001249697653793,
+          "repair_final_score": 5.001249697653793,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "partition_guided_search",
+          "density_error": 0.05692171248891398,
+          "degree_mae": 8.987341772151899,
+          "motif_overlap": 0.10463066816215352,
+          "edge_disagreement_rate": 0.34781907602999274,
+          "exact_r_clique_count": 343255,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.625,
+          "top_shift_recall": 0.625,
+          "top_shift_jaccard": 0.45454545454545453,
+          "sampled_r_clique_rate": 0.009333333333333334,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 5.1280907844876245,
+          "search_best_score": 5.100127522911124,
+          "search_accepted_moves": 268,
+          "search_iterations": 600,
+          "search_shift_count": 4,
+          "search_correction_count": 6,
+          "partition_blocks": 4,
+          "repair_steps_applied": 0,
+          "repair_initial_score": 5.101377522911124,
+          "repair_final_score": 5.101377522911124,
+          "repair_exact_count_before": 8000,
+          "repair_exact_count_after": 8000
+        },
+        {
+          "name": "portfolio_guided_search",
+          "density_error": 0.009513827299846789,
+          "degree_mae": 2.8607594936708862,
+          "motif_overlap": 0.06954013779842974,
+          "edge_disagreement_rate": 0.4540836894299766,
+          "exact_r_clique_count": 5356,
+          "exact_r_clique_free": 0.0,
+          "top_shift_precision": 0.0,
+          "top_shift_recall": 0.0,
+          "top_shift_jaccard": 0.0,
+          "sampled_r_clique_rate": 0.0,
+          "sampled_s_independent_rate": 0.0,
+          "validity_proxy": 0.5,
+          "search_initial_score": 4.377027174488668,
+          "search_best_score": 4.3626019144742125,
+          "search_accepted_moves": 79,
+          "search_iterations": 600,
+          "search_shift_count": 23,
+          "search_correction_count": 6,
+          "portfolio_refine_iterations": 200,
+          "portfolio_seed_component": "random_local_search",
+          "repair_steps_applied": 6,
+          "repair_initial_score": 4.3626019144742125,
+          "repair_final_score": 4.3479854051108076,
+          "repair_exact_count_before": 5516,
+          "repair_exact_count_after": 5356,
+          "portfolio_component": "portfolio_refined",
+          "portfolio_objective": 4.3479854051108076,
+          "portfolio_alignment": 0.3346487019568898,
+          "portfolio_structure_alignment": 0.6692974039137796,
+          "portfolio_profile_alignment": 0.0,
+          "portfolio_correction_penalty": 0.0,
+          "portfolio_selection_score": 4.3479854051108076,
+          "portfolio_exact_r_clique_count": 5356,
+          "search_portfolio_size": 4
+        }
+      ]
+    }
+  ]
+}

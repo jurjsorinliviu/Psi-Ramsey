@@ -1,0 +1,1238 @@
+{
+  "suite": "ablations",
+  "smoke": false,
+  "replicates": 6,
+  "base_seed": 1234,
+  "aggregate_means": {
+    "teacher_mean_transfer": {
+      "mean_density_error": 0.026041502980954215,
+      "mean_degree_mae": 3.320895997364273,
+      "mean_motif_overlap": 0.057921388976604066,
+      "mean_edge_disagreement_rate": 0.3916277237867222,
+      "mean_exact_r_clique_count": 98891.46666666667,
+      "mean_exact_r_clique_free": 0.0,
+      "mean_top_shift_precision": 0.19999999999999998,
+      "mean_top_shift_recall": 0.19999999999999998,
+      "mean_top_shift_jaccard": 0.11663003663003664,
+      "mean_sampled_r_clique_rate": 0.00757777777777778,
+      "mean_sampled_s_independent_rate": 0.0,
+      "mean_validity_proxy": 0.5,
+      "mean_repair_steps_applied": 3.6666666666666674,
+      "mean_repair_initial_score": 4.291630839129522,
+      "mean_repair_final_score": 4.264342387028867,
+      "mean_repair_exact_count_before": 5147.400000000001,
+      "mean_repair_exact_count_after": 5137.8
+    },
+    "student_no_filter_transfer": {
+      "mean_density_error": 0.026374272292538997,
+      "mean_degree_mae": 3.3363725015364287,
+      "mean_motif_overlap": 0.06286729807577837,
+      "mean_edge_disagreement_rate": 0.38154699240940454,
+      "mean_exact_r_clique_count": 96820.06666666665,
+      "mean_exact_r_clique_free": 0.06666666666666667,
+      "mean_top_shift_precision": 0.20833333333333334,
+      "mean_top_shift_recall": 0.20833333333333334,
+      "mean_top_shift_jaccard": 0.12210012210012211,
+      "mean_sampled_r_clique_rate": 0.007133333333333334,
+      "mean_sampled_s_independent_rate": 0.0,
+      "mean_validity_proxy": 0.5333333333333333,
+      "mean_repair_steps_applied": 3.1999999999999997,
+      "mean_repair_initial_score": 4.145340815097126,
+      "mean_repair_final_score": 4.1242866821467095,
+      "mean_repair_exact_count_before": 5123.000000000001,
+      "mean_repair_exact_count_after": 5110.2
+    },
+    "structured_seed": {
+      "mean_density_error": 0.0024886339514372468,
+      "mean_degree_mae": 0.806287086606294,
+      "mean_motif_overlap": 0.05858932477606225,
+      "mean_edge_disagreement_rate": 0.3906864849608008,
+      "mean_exact_r_clique_count": 113631.40000000001,
+      "mean_exact_r_clique_free": 0.0,
+      "mean_top_shift_precision": 0.225,
+      "mean_top_shift_recall": 0.225,
+      "mean_top_shift_jaccard": 0.13714285714285715,
+      "mean_sampled_r_clique_rate": 0.007977777777777778,
+      "mean_sampled_s_independent_rate": 0.0,
+      "mean_validity_proxy": 0.5,
+      "mean_repair_steps_applied": 2.6,
+      "mean_repair_initial_score": 4.244560916847696,
+      "mean_repair_final_score": 4.230422697105793,
+      "mean_repair_exact_count_before": 4993.2,
+      "mean_repair_exact_count_after": 4983.599999999999
+    },
+    "psi_ramsey_transfer": {
+      "mean_density_error": 0.026374272292538997,
+      "mean_degree_mae": 3.3363725015364287,
+      "mean_motif_overlap": 0.06286108554510401,
+      "mean_edge_disagreement_rate": 0.3815594174707533,
+      "mean_exact_r_clique_count": 96817.93333333333,
+      "mean_exact_r_clique_free": 0.06666666666666667,
+      "mean_top_shift_precision": 0.2041666666666667,
+      "mean_top_shift_recall": 0.2041666666666667,
+      "mean_top_shift_jaccard": 0.11916971916971919,
+      "mean_sampled_r_clique_rate": 0.0070888888888888885,
+      "mean_sampled_s_independent_rate": 0.0,
+      "mean_validity_proxy": 0.5333333333333333,
+      "mean_repair_steps_applied": 3.1999999999999997,
+      "mean_repair_initial_score": 4.141799148430459,
+      "mean_repair_final_score": 4.1195346980197245,
+      "mean_repair_exact_count_before": 5123.000000000001,
+      "mean_repair_exact_count_after": 5110.2
+    }
+  },
+  "replicate_summaries": [
+    {
+      "replicate": 0,
+      "seed": 1234,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.320412905576833,
+          "mean_motif_overlap": 0.057943132833964364,
+          "mean_edge_disagreement_rate": 0.3915904498112643,
+          "mean_exact_r_clique_count": 98941.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.009733333333333333,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.2907975057961885,
+          "mean_repair_final_score": 4.2630793595243155,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.06061612782096244,
+          "mean_edge_disagreement_rate": 0.38631632955338274,
+          "mean_exact_r_clique_count": 96503.6,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.008666666666666666,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.375630890439809,
+          "mean_repair_final_score": 4.351867036049645,
+          "mean_repair_exact_count_before": 5224.2,
+          "mean_repair_exact_count_after": 5207.4
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8040648643840719,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.010933333333333333,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.23976925018103,
+          "mean_repair_final_score": 4.229728252661349,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.06061612782096244,
+          "mean_edge_disagreement_rate": 0.38631632955338274,
+          "mean_exact_r_clique_count": 96503.6,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.008533333333333334,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.376880890439809,
+          "mean_repair_final_score": 4.354367036049645,
+          "mean_repair_exact_count_before": 5224.2,
+          "mean_repair_exact_count_after": 5207.4
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 2.9,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.9,
+            "teacher_mean_transfer": 2.9
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.8,
+            "teacher_mean_transfer": 3.1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.1
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2.4,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.4,
+            "teacher_mean_transfer": 2.3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.7,
+            "teacher_mean_transfer": 2.1
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.6,
+            "structured_seed": 2.2,
+            "student_no_filter_transfer": 2.6,
+            "teacher_mean_transfer": 2.6
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 2,
+            "teacher_mean_transfer": 3
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2,
+            "structured_seed": 3,
+            "student_no_filter_transfer": 2,
+            "teacher_mean_transfer": 2
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 5
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.6285714285714286,
+          "structured_seed": 2.2285714285714286,
+          "student_no_filter_transfer": 2.6285714285714286,
+          "teacher_mean_transfer": 2.514285714285714
+        }
+      }
+    },
+    {
+      "replicate": 1,
+      "seed": 1235,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.320412905576833,
+          "mean_motif_overlap": 0.05792449524194125,
+          "mean_edge_disagreement_rate": 0.3916277249953105,
+          "mean_exact_r_clique_count": 98931.8,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.006933333333333333,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.285797505796188,
+          "mean_repair_final_score": 4.259329359524315,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.02535732313999662,
+          "mean_degree_mae": 3.2763725015364296,
+          "mean_motif_overlap": 0.059977474009205736,
+          "mean_edge_disagreement_rate": 0.3882712966509887,
+          "mean_exact_r_clique_count": 98978.0,
+          "mean_exact_r_clique_free": 0.2,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.007200000000000001,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.6,
+          "mean_repair_steps_applied": 2.4,
+          "mean_repair_initial_score": 3.815735501981442,
+          "mean_repair_final_score": 3.8023908343150064,
+          "mean_repair_exact_count_before": 5196.0,
+          "mean_repair_exact_count_after": 5184.0
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8040648643840719,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.0074666666666666675,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.2447692501810295,
+          "mean_repair_final_score": 4.229311585994683,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.02535732313999662,
+          "mean_degree_mae": 3.2763725015364296,
+          "mean_motif_overlap": 0.059977474009205736,
+          "mean_edge_disagreement_rate": 0.3882712966509887,
+          "mean_exact_r_clique_count": 98978.0,
+          "mean_exact_r_clique_free": 0.2,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.007200000000000001,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.6,
+          "mean_repair_steps_applied": 2.4,
+          "mean_repair_initial_score": 3.818235501981442,
+          "mean_repair_final_score": 3.8061408343150065,
+          "mean_repair_exact_count_before": 5196.0,
+          "mean_repair_exact_count_after": 5184.0
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.8,
+            "teacher_mean_transfer": 3.1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.7,
+            "teacher_mean_transfer": 3.3
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.5
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 3.1,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.6,
+            "structured_seed": 2.2,
+            "student_no_filter_transfer": 2.6,
+            "teacher_mean_transfer": 2.6
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 2.7,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.7
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 3
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 4,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 3,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 4
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.5,
+          "structured_seed": 2.2857142857142856,
+          "student_no_filter_transfer": 2.5,
+          "teacher_mean_transfer": 2.7142857142857144
+        }
+      }
+    },
+    {
+      "replicate": 2,
+      "seed": 1236,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.320412905576833,
+          "mean_motif_overlap": 0.057905857649918145,
+          "mean_edge_disagreement_rate": 0.3916650001793568,
+          "mean_exact_r_clique_count": 98909.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.008400000000000001,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.288297505796189,
+          "mean_repair_final_score": 4.262484121429077,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.029425119750166106,
+          "mean_degree_mae": 3.5163725015364293,
+          "mean_motif_overlap": 0.06693894785806818,
+          "mean_edge_disagreement_rate": 0.37032605671080965,
+          "mean_exact_r_clique_count": 96306.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13186813186813187,
+          "mean_sampled_r_clique_rate": 0.007866666666666666,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.244658435980301,
+          "mean_repair_final_score": 4.208698642710568,
+          "mean_repair_exact_count_before": 5022.0,
+          "mean_repair_exact_count_after": 5010.0
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8107315310507385,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.0092,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.2535192501810295,
+          "mean_repair_final_score": 4.238061585994683,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.029425119750166106,
+          "mean_degree_mae": 3.5163725015364293,
+          "mean_motif_overlap": 0.06693894785806818,
+          "mean_edge_disagreement_rate": 0.37032605671080965,
+          "mean_exact_r_clique_count": 96306.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13186813186813187,
+          "mean_sampled_r_clique_rate": 0.007866666666666666,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.247158435980301,
+          "mean_repair_final_score": 4.209948642710569,
+          "mean_repair_exact_count_before": 5022.0,
+          "mean_repair_exact_count_after": 5010.0
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 3.0,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 3.0,
+            "teacher_mean_transfer": 2.7
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.9,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.9,
+            "teacher_mean_transfer": 2.9
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.1,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.1,
+            "teacher_mean_transfer": 2.9
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2.1,
+            "structured_seed": 3.1,
+            "student_no_filter_transfer": 2.1,
+            "teacher_mean_transfer": 2.7
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.1,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.1,
+            "teacher_mean_transfer": 2.9
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.4,
+            "structured_seed": 2.4,
+            "student_no_filter_transfer": 2.4,
+            "teacher_mean_transfer": 2.8
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 4,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 1
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 4,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 5
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.442857142857143,
+          "structured_seed": 2.3428571428571425,
+          "student_no_filter_transfer": 2.442857142857143,
+          "teacher_mean_transfer": 2.7714285714285714
+        }
+      }
+    },
+    {
+      "replicate": 3,
+      "seed": 1237,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.02605141437270822,
+          "mean_degree_mae": 3.320412905576833,
+          "mean_motif_overlap": 0.05792449524194125,
+          "mean_edge_disagreement_rate": 0.39161159986429384,
+          "mean_exact_r_clique_count": 98791.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.0074666666666666675,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.8,
+          "mean_repair_initial_score": 4.297047505796188,
+          "mean_repair_final_score": 4.268087422089824,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.02535732313999662,
+          "mean_degree_mae": 3.2763725015364296,
+          "mean_motif_overlap": 0.060505016709851325,
+          "mean_edge_disagreement_rate": 0.3872202843556426,
+          "mean_exact_r_clique_count": 96363.8,
+          "mean_exact_r_clique_free": 0.2,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.0064,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.6,
+          "mean_repair_steps_applied": 2.4,
+          "mean_repair_initial_score": 3.7834924414676836,
+          "mean_repair_final_score": 3.7709470065203092,
+          "mean_repair_exact_count_before": 5077.2,
+          "mean_repair_exact_count_after": 5067.6
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8040648643840719,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.008,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.24851925018103,
+          "mean_repair_final_score": 4.234311585994683,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.02535732313999662,
+          "mean_degree_mae": 3.2763725015364296,
+          "mean_motif_overlap": 0.06048637911782821,
+          "mean_edge_disagreement_rate": 0.3872575595396889,
+          "mean_exact_r_clique_count": 96360.4,
+          "mean_exact_r_clique_free": 0.2,
+          "mean_top_shift_precision": 0.175,
+          "mean_top_shift_recall": 0.175,
+          "mean_top_shift_jaccard": 0.09904761904761904,
+          "mean_sampled_r_clique_rate": 0.0064,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.6,
+          "mean_repair_steps_applied": 2.4,
+          "mean_repair_initial_score": 3.782242441467684,
+          "mean_repair_final_score": 3.7703517684250714,
+          "mean_repair_exact_count_before": 5077.2,
+          "mean_repair_exact_count_after": 5067.6
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 1.2,
+            "student_no_filter_transfer": 2.7,
+            "teacher_mean_transfer": 3.4
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.7,
+            "teacher_mean_transfer": 3.3
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 3.0,
+            "student_no_filter_transfer": 2.4,
+            "teacher_mean_transfer": 1.9
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 1.9,
+            "structured_seed": 3.2,
+            "student_no_filter_transfer": 2.2,
+            "teacher_mean_transfer": 2.7
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.2
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 2.2,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 2.7,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.7
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 0
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 1,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 3
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 1,
+            "student_no_filter_transfer": 2,
+            "teacher_mean_transfer": 1
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2,
+            "structured_seed": 3,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 4
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.5571428571428574,
+          "structured_seed": 2.3,
+          "student_no_filter_transfer": 2.4714285714285715,
+          "teacher_mean_transfer": 2.6714285714285713
+        }
+      }
+    },
+    {
+      "replicate": 4,
+      "seed": 1238,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.320412905576833,
+          "mean_motif_overlap": 0.057905857649918145,
+          "mean_edge_disagreement_rate": 0.3916650001793568,
+          "mean_exact_r_clique_count": 98909.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.0064,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.288297505796189,
+          "mean_repair_final_score": 4.262484121429077,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.06532039724147451,
+          "mean_edge_disagreement_rate": 0.37709611462949605,
+          "mean_exact_r_clique_count": 96408.6,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13421245421245423,
+          "mean_sampled_r_clique_rate": 0.007066666666666667,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.372284928185399,
+          "mean_repair_final_score": 4.355576328245795,
+          "mean_repair_exact_count_before": 5117.4,
+          "mean_repair_exact_count_after": 5103.0
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8040648643840719,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.0056,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.241019250181029,
+          "mean_repair_final_score": 4.226811585994683,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.06530175964945141,
+          "mean_edge_disagreement_rate": 0.3771333898135422,
+          "mean_exact_r_clique_count": 96399.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13421245421245423,
+          "mean_sampled_r_clique_rate": 0.006933333333333333,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.3585349281854,
+          "mean_repair_final_score": 4.3339096615791295,
+          "mean_repair_exact_count_before": 5117.4,
+          "mean_repair_exact_count_after": 5103.0
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 2.9,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.9,
+            "teacher_mean_transfer": 2.9
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.8,
+            "teacher_mean_transfer": 3.1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.4,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.2,
+            "teacher_mean_transfer": 2.9
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2.4,
+            "structured_seed": 2.7,
+            "student_no_filter_transfer": 2.6,
+            "teacher_mean_transfer": 2.3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.2,
+            "structured_seed": 2.9,
+            "student_no_filter_transfer": 2.0,
+            "teacher_mean_transfer": 2.9
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.4,
+            "structured_seed": 2.4,
+            "student_no_filter_transfer": 2.4,
+            "teacher_mean_transfer": 2.8
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2,
+            "structured_seed": 3,
+            "student_no_filter_transfer": 2,
+            "teacher_mean_transfer": 2
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 2,
+            "teacher_mean_transfer": 3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 1
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 4,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 5
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.5142857142857147,
+          "structured_seed": 2.2285714285714286,
+          "student_no_filter_transfer": 2.4857142857142853,
+          "teacher_mean_transfer": 2.7714285714285714
+        }
+      }
+    },
+    {
+      "replicate": 5,
+      "seed": 1239,
+      "aggregate": {
+        "teacher_mean_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026056446546250927,
+          "mean_degree_mae": 3.3233114563014707,
+          "mean_motif_overlap": 0.05792449524194125,
+          "mean_edge_disagreement_rate": 0.39160656769075114,
+          "mean_exact_r_clique_count": 98866.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.006533333333333334,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.8,
+          "mean_repair_initial_score": 4.2995475057961885,
+          "mean_repair_final_score": 4.270589938176595,
+          "mean_repair_exact_count_before": 5147.4,
+          "mean_repair_exact_count_after": 5137.8
+        },
+        "student_no_filter_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.0638458248151081,
+          "mean_edge_disagreement_rate": 0.3800518725561074,
+          "mean_exact_r_clique_count": 96360.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.0056,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.280242692528115,
+          "mean_repair_final_score": 4.25624024503893,
+          "mean_repair_exact_count_before": 5101.2,
+          "mean_repair_exact_count_after": 5089.2
+        },
+        "structured_seed": {
+          "targets": 5,
+          "mean_density_error": 0.0024886339514372468,
+          "mean_degree_mae": 0.8107315310507385,
+          "mean_motif_overlap": 0.05858932477606225,
+          "mean_edge_disagreement_rate": 0.3906864849608008,
+          "mean_exact_r_clique_count": 113631.4,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.225,
+          "mean_top_shift_recall": 0.225,
+          "mean_top_shift_jaccard": 0.13714285714285715,
+          "mean_sampled_r_clique_rate": 0.006666666666666666,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 2.6,
+          "mean_repair_initial_score": 4.23976925018103,
+          "mean_repair_final_score": 4.224311585994682,
+          "mean_repair_exact_count_before": 4993.2,
+          "mean_repair_exact_count_after": 4983.6
+        },
+        "psi_ramsey_transfer": {
+          "targets": 5,
+          "mean_density_error": 0.026035289241691534,
+          "mean_degree_mae": 3.316372501536429,
+          "mean_motif_overlap": 0.0638458248151081,
+          "mean_edge_disagreement_rate": 0.3800518725561074,
+          "mean_exact_r_clique_count": 96360.2,
+          "mean_exact_r_clique_free": 0.0,
+          "mean_top_shift_precision": 0.2,
+          "mean_top_shift_recall": 0.2,
+          "mean_top_shift_jaccard": 0.11663003663003664,
+          "mean_sampled_r_clique_rate": 0.0056,
+          "mean_sampled_s_independent_rate": 0.0,
+          "mean_validity_proxy": 0.5,
+          "mean_repair_steps_applied": 3.6,
+          "mean_repair_initial_score": 4.267742692528115,
+          "mean_repair_final_score": 4.24249024503893,
+          "mean_repair_exact_count_before": 5101.2,
+          "mean_repair_exact_count_after": 5089.2
+        }
+      },
+      "ranking": {
+        "targets": 5,
+        "metric_preferences": {
+          "density_error": "min",
+          "degree_mae": "min",
+          "edge_disagreement_rate": "min",
+          "exact_r_clique_count": "min",
+          "motif_overlap": "max",
+          "top_shift_jaccard": "max",
+          "validity_proxy": "max"
+        },
+        "mean_ranks": {
+          "density_error": {
+            "psi_ramsey_transfer": 2.8,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.8,
+            "teacher_mean_transfer": 3.1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 2.7,
+            "structured_seed": 1.3,
+            "student_no_filter_transfer": 2.7,
+            "teacher_mean_transfer": 3.3
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.9
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 2.2,
+            "structured_seed": 3.1,
+            "student_no_filter_transfer": 2.2,
+            "teacher_mean_transfer": 2.5
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 2.3,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.3,
+            "teacher_mean_transfer": 2.9
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.4,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.6
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 2.5,
+            "structured_seed": 2.5,
+            "student_no_filter_transfer": 2.5,
+            "teacher_mean_transfer": 2.5
+          }
+        },
+        "winner_counts": {
+          "density_error": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "degree_mae": {
+            "psi_ramsey_transfer": 1,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 1,
+            "teacher_mean_transfer": 1
+          },
+          "edge_disagreement_rate": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 3,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 1
+          },
+          "exact_r_clique_count": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 3
+          },
+          "motif_overlap": {
+            "psi_ramsey_transfer": 3,
+            "structured_seed": 2,
+            "student_no_filter_transfer": 3,
+            "teacher_mean_transfer": 2
+          },
+          "top_shift_jaccard": {
+            "psi_ramsey_transfer": 4,
+            "structured_seed": 4,
+            "student_no_filter_transfer": 4,
+            "teacher_mean_transfer": 3
+          },
+          "validity_proxy": {
+            "psi_ramsey_transfer": 5,
+            "structured_seed": 5,
+            "student_no_filter_transfer": 5,
+            "teacher_mean_transfer": 5
+          }
+        },
+        "overall_mean_rank": {
+          "psi_ramsey_transfer": 2.4714285714285715,
+          "structured_seed": 2.2285714285714286,
+          "student_no_filter_transfer": 2.4714285714285715,
+          "teacher_mean_transfer": 2.8285714285714287
+        }
+      }
+    }
+  ]
+}

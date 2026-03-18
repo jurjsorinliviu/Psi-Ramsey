@@ -1,0 +1,166 @@
+{
+  "targets": 5,
+  "metric_preferences": {
+    "density_error": "min",
+    "degree_mae": "min",
+    "edge_disagreement_rate": "min",
+    "exact_r_clique_count": "min",
+    "motif_overlap": "max",
+    "top_shift_jaccard": "max",
+    "validity_proxy": "max"
+  },
+  "mean_ranks": {
+    "density_error": {
+      "exact_triangle_transfer": 4.0,
+      "partition_transfer": 7.6,
+      "portfolio_transfer": 4.0,
+      "psi_ramsey_transfer": 5.7,
+      "random_circulant": 3.0,
+      "random_density": 2.6,
+      "scaled_nearest_transfer": 6.7,
+      "structured_seed": 2.4
+    },
+    "degree_mae": {
+      "exact_triangle_transfer": 4.4,
+      "partition_transfer": 7.6,
+      "portfolio_transfer": 3.2,
+      "psi_ramsey_transfer": 4.9,
+      "random_circulant": 2.4,
+      "random_density": 6.0,
+      "scaled_nearest_transfer": 5.9,
+      "structured_seed": 1.6
+    },
+    "edge_disagreement_rate": {
+      "exact_triangle_transfer": 3.8,
+      "partition_transfer": 2.6,
+      "portfolio_transfer": 3.8,
+      "psi_ramsey_transfer": 5.0,
+      "random_circulant": 5.0,
+      "random_density": 4.2,
+      "scaled_nearest_transfer": 6.6,
+      "structured_seed": 5.0
+    },
+    "exact_r_clique_count": {
+      "exact_triangle_transfer": 2.0,
+      "partition_transfer": 5.6,
+      "portfolio_transfer": 1.2,
+      "psi_ramsey_transfer": 5.6,
+      "random_circulant": 3.7,
+      "random_density": 3.8,
+      "scaled_nearest_transfer": 7.6,
+      "structured_seed": 6.5
+    },
+    "motif_overlap": {
+      "exact_triangle_transfer": 3.4,
+      "partition_transfer": 6.2,
+      "portfolio_transfer": 4.6,
+      "psi_ramsey_transfer": 5.3,
+      "random_circulant": 5.6,
+      "random_density": 2.4,
+      "scaled_nearest_transfer": 2.9,
+      "structured_seed": 5.6
+    },
+    "top_shift_jaccard": {
+      "exact_triangle_transfer": 6.0,
+      "partition_transfer": 3.8,
+      "portfolio_transfer": 4.2,
+      "psi_ramsey_transfer": 4.8,
+      "random_circulant": 4.4,
+      "random_density": 5.4,
+      "scaled_nearest_transfer": 3.6,
+      "structured_seed": 3.8
+    },
+    "validity_proxy": {
+      "exact_triangle_transfer": 4.1,
+      "partition_transfer": 4.1,
+      "portfolio_transfer": 3.3,
+      "psi_ramsey_transfer": 4.8,
+      "random_circulant": 4.8,
+      "random_density": 4.8,
+      "scaled_nearest_transfer": 5.3,
+      "structured_seed": 4.8
+    }
+  },
+  "winner_counts": {
+    "density_error": {
+      "exact_triangle_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 1,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "random_density": 2,
+      "scaled_nearest_transfer": 0,
+      "structured_seed": 2
+    },
+    "degree_mae": {
+      "exact_triangle_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 1,
+      "psi_ramsey_transfer": 1,
+      "random_circulant": 1,
+      "random_density": 0,
+      "scaled_nearest_transfer": 1,
+      "structured_seed": 4
+    },
+    "edge_disagreement_rate": {
+      "exact_triangle_transfer": 1,
+      "partition_transfer": 3,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 1,
+      "random_density": 0,
+      "scaled_nearest_transfer": 0,
+      "structured_seed": 0
+    },
+    "exact_r_clique_count": {
+      "exact_triangle_transfer": 1,
+      "partition_transfer": 1,
+      "portfolio_transfer": 5,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "random_density": 0,
+      "scaled_nearest_transfer": 0,
+      "structured_seed": 0
+    },
+    "motif_overlap": {
+      "exact_triangle_transfer": 0,
+      "partition_transfer": 0,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 1,
+      "random_circulant": 0,
+      "random_density": 2,
+      "scaled_nearest_transfer": 3,
+      "structured_seed": 0
+    },
+    "top_shift_jaccard": {
+      "exact_triangle_transfer": 1,
+      "partition_transfer": 2,
+      "portfolio_transfer": 0,
+      "psi_ramsey_transfer": 0,
+      "random_circulant": 0,
+      "random_density": 0,
+      "scaled_nearest_transfer": 1,
+      "structured_seed": 1
+    },
+    "validity_proxy": {
+      "exact_triangle_transfer": 4,
+      "partition_transfer": 4,
+      "portfolio_transfer": 5,
+      "psi_ramsey_transfer": 3,
+      "random_circulant": 3,
+      "random_density": 3,
+      "scaled_nearest_transfer": 3,
+      "structured_seed": 3
+    }
+  },
+  "overall_mean_rank": {
+    "exact_triangle_transfer": 3.9571428571428564,
+    "partition_transfer": 5.357142857142857,
+    "portfolio_transfer": 3.471428571428571,
+    "psi_ramsey_transfer": 5.1571428571428575,
+    "random_circulant": 4.128571428571429,
+    "random_density": 4.171428571428572,
+    "scaled_nearest_transfer": 5.514285714285714,
+    "structured_seed": 4.242857142857143
+  }
+}

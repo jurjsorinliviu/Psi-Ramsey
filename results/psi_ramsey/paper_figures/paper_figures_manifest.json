@@ -1,0 +1,27 @@
+{
+  "source_files": {
+    "transfer_aggregate": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\transfer\\aggregate.json",
+    "search_aggregate": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\search\\aggregate.json",
+    "transfer_report": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\transfer\\report.json"
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "title": "Structure-Validity Frontier",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\paper_figures\\figure_1_structure_validity_frontier.png",
+      "caption": "Tradeoff between structural agreement and Ramsey-valid transfer. The horizontal axis represents mean exact r-clique count, where lower is better. The vertical axis represents structural agreement, measured as the average of motif overlap and top-shift Jaccard similarity. The figure shows that structure_oracle_transfer lies on the structure-dominant frontier, whereas portfolio_transfer attains the strongest balance between structural agreement and Ramsey-valid construction."
+    },
+    {
+      "figure": 2,
+      "title": "Search Tradeoff Between Refinement Score and Exact Validity",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\paper_figures\\figure_2_search_tradeoff.png",
+      "caption": "Comparison of search-time methods by mean search best score and mean exact r-clique count. Lower values are better on both axes. A logarithmic vertical axis is used to make the contrast between the main search methods and the partition-based outlier readable in a single panel. The figure shows that portfolio_guided_search provides the strongest balanced search position among the compared methods."
+    },
+    {
+      "figure": 3,
+      "title": "Per-Target Exact Clique Counts for Transfer Methods",
+      "path": "C:\\Users\\jurjs\\Desktop\\PostDoc pmTUC\\Papers ideas\\Psi-Ramsey\\results\\psi_ramsey\\paper_figures\\figure_3_per_target_transfer_counts.png",
+      "caption": "Per-target comparison of exact r-clique counts across the main transfer baselines. Lower values are better. The figure highlights the consistency of portfolio_transfer across the target set and shows where structure-dominant and simpler baselines succeed or fail."
+    }
+  ]
+}
