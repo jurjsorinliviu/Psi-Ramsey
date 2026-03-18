@@ -393,7 +393,7 @@ If you use this repository, code structure, or generated experimental outputs, p
 ```bibtex
 @misc{jurj_psiramsey_2026,
   author       = {Sorin Liviu Jurj},
-  title        = {Ψ-Ramsey: Transferable Structural Search in Ramsey Graph Construction},
+  title        = {Ψ-Ramsey: A Physics Structure-Informed Neural Networks-Inspired Framework for Transferable Structural Search in Ramsey Graph Construction},
   year         = {2026},
   howpublished = {\url{https://github.com/jurjsorinliviu/Psi-Ramsey}},
   note         = {GitHub repository, pre-publication research prototype}
