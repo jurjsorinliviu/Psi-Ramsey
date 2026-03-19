@@ -1,4 +1,4 @@
-# Psi-Ramsey runtime requirements
+# From Cell-Specific Heuristics to Transferable Structural Search for Ramsey Graph Construction runtime requirements
 # The core experiment pipeline uses the Python standard library.
 # These packages are needed for figure generation and supplementary material generation.
 
